@@ -6,3 +6,22 @@
 .dropdown-item:hover{
     background-color: gray;
 }
+
+h1{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.list-group{
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+.tab-pane{
+    margin-right: 15%;
+    margin-top: 5%;
+}
+
+.row{
+    margin: 0;
+}

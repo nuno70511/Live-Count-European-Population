@@ -25,3 +25,8 @@ h1{
 .row{
     margin: 0;
 }
+
+.index{
+    border: 0;
+    pointer-events: none;
+}

@@ -1,3 +1,7 @@
+body{
+    position: relative;
+}
+
 .hp_bg{
     width: 100%;
     max-height: 100vh;
@@ -9,17 +13,15 @@
 
 h1{
     text-align: center;
-    margin-top: 5%;
+    margin: 5% 0 0 0;
 }
 
 .list-group{
-    margin-left: 15%;
-    margin-top: 10%;
+    margin: 10% 0 0 15%;
 }
 
 .tab-pane{
-    margin-right: 15%;
-    margin-top: 5%;
+    margin: 5% 10% 0 0;
 }
 
 .row{
@@ -29,9 +31,71 @@ h1{
 .index{
     border: 0;
     pointer-events: none;
+    /* Para a borda superior do indice nao se sobrepor a do elemento acima, atribuir z-index de -1 */
+    position: relative;
+    z-index: -1;
 }
 
 .list-group{
     overflow-y: scroll;
     height: 500px;
+    /* Adicionar padding para melhor espacamento entre scrollbar e botoes */
+    padding-right: 5px;
+}
+
+footer{
+    margin: 5% 0 0 0;
+    height: 400px;
+    background-color: #343a40;
+}
+
+.about{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+table{
+    margin: 5% 0 0 0;
+}
+
+th{
+    text-decoration: underline;
+}
+
+.favicons{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: 2% 0 0 0;
+}
+
+.fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.fa-facebook{
+    color: #3B5998;
+}
+
+.fa-twitter{
+    color: #55ACEE;
+}
+
+.fa-youtube{
+    color: #bb0000;
+}
+
+.fa-instagram{
+    color: #125688;
 }

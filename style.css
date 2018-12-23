@@ -5,6 +5,8 @@ body{
 .hp_bg{
     width: 100%;
     max-height: 100vh;
+    position: relative;
+    z-index: -1;
 }
 
 .dropdown-item:hover{
@@ -61,6 +63,15 @@ table{
 
 th{
     text-decoration: underline;
+}
+
+#cntALL{
+    font-size: 700%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    color: whitesmoke;
 }
 
 .favicons{

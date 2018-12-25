@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>ELCP</title>
 
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -18,7 +18,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand text-light" href="#">Live Count European Population</a>
+        <a class="navbar-brand text-light" href="#">European Live Counting Population</a>
       
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
@@ -37,7 +37,7 @@
     </nav>
 
     <!--Photo by Tom Grimbert on Unsplash-->
-    <img class="hp_bg" src="rsc_imgs/hp_bg.jpg">
+    <img class="bgImg" src="imgs/globo.jpg">
 
     <h1 id="cntALL"></h1>
 
@@ -49,253 +49,354 @@
         <div class="col-4">
           <div class="list-group" id="list-tab" role="tablist">
             <a class="list-group-item list-group-item-action index" id="indexA" data-toggle="list" href="#" role="tab" aria-controls="#">A</a>
-            <a class="list-group-item list-group-item-action" id="albania-list" data-toggle="list" href="#albania-content" role="tab" aria-controls="#">Albania</a>
-            <a class="list-group-item list-group-item-action" id="armenia-list" data-toggle="list" href="#armenia-content" role="tab" aria-controls="#">Armenia</a>
-            <a class="list-group-item list-group-item-action" id="austria-list" data-toggle="list" href="#austria-content" role="tab" aria-controls="#">Austria</a>
-            <a class="list-group-item list-group-item-action" id="azerbaijan-list" data-toggle="list" href="#azerbaijan-content" role="tab" aria-controls="#">Azerbaijan</a>
+            <a class="list-group-item list-group-item-action" id="albania-list" data-toggle="list" href="#albania-content" role="tab" aria-controls="#">Albania <img src="albania1.png" alt="Albania" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="armenia-list" data-toggle="list" href="#armenia-content" role="tab" aria-controls="#">Armenia <img src="Armenia1.png" alt="Armenia" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="austria-list" data-toggle="list" href="#austria-content" role="tab" aria-controls="#">Austria <img src="Austria1.png" alt="Austria" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="azerbaijan-list" data-toggle="list" href="#azerbaijan-content" role="tab" aria-controls="#">Azerbaijan <img src="Azerbaijan1.jpg" alt="Azerbaijan" class="float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexB" data-toggle="list" href="#" role="tab" aria-controls="#">B</a>
-            <a class="list-group-item list-group-item-action" id="belarus-list" data-toggle="list" href="#belarus-content" role="tab" aria-controls="#">Belarus</a>
-            <a class="list-group-item list-group-item-action" id="belgium-list" data-toggle="list" href="#belgium-content" role="tab" aria-controls="#">Belgium</a>
-            <a class="list-group-item list-group-item-action" id="bosnia-list" data-toggle="list" href="#bosnia-content" role="tab" aria-controls="#">Bosnia and Herzegovina</a>
-            <a class="list-group-item list-group-item-action" id="bulgaria-list" data-toggle="list" href="#bulgaria-content" role="tab" aria-controls="#">Bulgaria</a>
+            <a class="list-group-item list-group-item-action" id="belarus-list" data-toggle="list" href="#belarus-content" role="tab" aria-controls="#">Belarus <img src="Belarus1.jpg" alt="Belarus" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="belgium-list" data-toggle="list" href="#belgium-content" role="tab" aria-controls="#">Belgium <img src="Belgium1.png" alt="Belgium" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="bosnia-list" data-toggle="list" href="#bosnia-content" role="tab" aria-controls="#">Bosnia and Herzegovina <img src="Bosnia_Herzegovina1.png" alt="Bosnia and Herzegovina" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="bulgaria-list" data-toggle="list" href="#bulgaria-content" role="tab" aria-controls="#">Bulgaria <img src="Bulgaria1.png" alt="Bulgaria" class="float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexC" data-toggle="list" href="#" role="tab" aria-controls="#">C</a>
-            <a class="list-group-item list-group-item-action" id="croatia-list" data-toggle="list" href="#croatia-content" role="tab" aria-controls="#">Croatia</a>
-            <a class="list-group-item list-group-item-action" id="cyprus-list" data-toggle="list" href="#cyprus-content" role="tab" aria-controls="#">Cyprus</a>
-            <a class="list-group-item list-group-item-action" id="czech-list" data-toggle="list" href="#czech-content" role="tab" aria-controls="#">Czech Republic</a>
+            <a class="list-group-item list-group-item-action" id="croatia-list" data-toggle="list" href="#croatia-content" role="tab" aria-controls="#">Croatia <img src="Croatia1.png" alt="Croatia" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="cyprus-list" data-toggle="list" href="#cyprus-content" role="tab" aria-controls="#">Cyprus <img src="Cyprus1.png" alt="Cyprus" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="czech-list" data-toggle="list" href="#czech-content" role="tab" aria-controls="#">Czech Republic <img src="Czech_Republic1.png" alt="Czech Republic" class="float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexD" data-toggle="list" href="#" role="tab" aria-controls="#">D</a>
-            <a class="list-group-item list-group-item-action" id="denmark-list" data-toggle="list" href="#denmark-content" role="tab" aria-controls="#">Denmark</a>
+            <a class="list-group-item list-group-item-action" id="denmark-list" data-toggle="list" href="#denmark-content" role="tab" aria-controls="#">Denmark <img src="Denmark1.gif" alt="Denmark" class="float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexE" data-toggle="list" href="#" role="tab" aria-controls="#">E</a>
-            <a class="list-group-item list-group-item-action" id="estonia-list" data-toggle="list" href="#estonia-content" role="tab" aria-controls="#">Estonia</a>
+            <a class="list-group-item list-group-item-action" id="estonia-list" data-toggle="list" href="#estonia-content" role="tab" aria-controls="#">Estonia <img src="Estonia1.png" alt="Estonia" class="float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexF" data-toggle="list" href="#" role="tab" aria-controls="#">F</a>
-            <a class="list-group-item list-group-item-action" id="finland-list" data-toggle="list" href="#finland-content" role="tab" aria-controls="#">Finland</a>
-            <a class="list-group-item list-group-item-action" id="france-list" data-toggle="list" href="#france-content" role="tab" aria-controls="#">France</a>
+            <a class="list-group-item list-group-item-action" id="finland-list" data-toggle="list" href="#finland-content" role="tab" aria-controls="#">Finland <img src="Finland1.gif" alt="Finland" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="france-list" data-toggle="list" href="#france-content" role="tab" aria-controls="#">France <img src="France1.png" alt="France" class="float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexG" data-toggle="list" href="#" role="tab" aria-controls="#">G</a>
-            <a class="list-group-item list-group-item-action" id="georgia-list" data-toggle="list" href="#georgia-content" role="tab" aria-controls="#">Georgia</a>
-            <a class="list-group-item list-group-item-action" id="germany-list" data-toggle="list" href="#germany-content" role="tab" aria-controls="#">Germany</a>
-            <a class="list-group-item list-group-item-action" id="greece-list" data-toggle="list" href="#greece-content" role="tab" aria-controls="#">Greece</a>
+            <a class="list-group-item list-group-item-action" id="georgia-list" data-toggle="list" href="#georgia-content" role="tab" aria-controls="#">Georgia <img src="Georgia1.png" alt="Georgia" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="germany-list" data-toggle="list" href="#germany-content" role="tab" aria-controls="#">Germany <img src="Germany1.png" alt="Germany" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="greece-list" data-toggle="list" href="#greece-content" role="tab" aria-controls="#">Greece <img src="Greece1.png" alt="Greece" class="float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexH" data-toggle="list" href="#" role="tab" aria-controls="#">H</a>
-            <a class="list-group-item list-group-item-action" id="hungary-list" data-toggle="list" href="#hungary-content" role="tab" aria-controls="#">Hungary</a>
+            <a class="list-group-item list-group-item-action" id="hungary-list" data-toggle="list" href="#hungary-content" role="tab" aria-controls="#">Hungary <img src="Hungary1.jpg" alt="Hungary" class="float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexI" data-toggle="list" href="#" role="tab" aria-controls="#">I</a>
-            <a class="list-group-item list-group-item-action" id="iceland-list" data-toggle="list" href="#iceland-content" role="tab" aria-controls="#">Iceland</a>
-            <a class="list-group-item list-group-item-action" id="ireland-list" data-toggle="list" href="#ireland-content" role="tab" aria-controls="#">Ireland</a>
-            <a class="list-group-item list-group-item-action" id="italy-list" data-toggle="list" href="#italy-content" role="tab" aria-controls="#">Italy</a>
+            <a class="list-group-item list-group-item-action" id="iceland-list" data-toggle="list" href="#iceland-content" role="tab" aria-controls="#">Iceland <img src="Iceland1.png" alt="Iceland" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="ireland-list" data-toggle="list" href="#ireland-content" role="tab" aria-controls="#">Ireland <img src="Ireland1.png" alt="Ireland" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="italy-list" data-toggle="list" href="#italy-content" role="tab" aria-controls="#">Italy <img src="Italy1.png" alt="Italy" class="float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexK" data-toggle="list" href="#" role="tab" aria-controls="#">K</a>
-            <a class="list-group-item list-group-item-action" id="kazakhstan-list" data-toggle="list" href="#kazakhstan-content" role="tab" aria-controls="#">Kazakhstan</a>
+            <a class="list-group-item list-group-item-action" id="kazakhstan-list" data-toggle="list" href="#kazakhstan-content" role="tab" aria-controls="#">Kazakhstan <img src="Kazakhstan1.png" alt="Kazakhstan" class="float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexL" data-toggle="list" href="#" role="tab" aria-controls="#">L</a>
-            <a class="list-group-item list-group-item-action" id="latvia-list" data-toggle="list" href="#latvia-content" role="tab" aria-controls="#">Latvia</a>
-            <a class="list-group-item list-group-item-action" id="lithuania-list" data-toggle="list" href="#lithuania-content" role="tab" aria-controls="#">Lithuania</a>
-            <a class="list-group-item list-group-item-action" id="luxembourg-list" data-toggle="list" href="#luxembourg-content" role="tab" aria-controls="#">Luxembourg</a>
+            <a class="list-group-item list-group-item-action" id="latvia-list" data-toggle="list" href="#latvia-content" role="tab" aria-controls="#">Latvia <img src="Latvia1.png" alt="Latvia" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="lithuania-list" data-toggle="list" href="#lithuania-content" role="tab" aria-controls="#">Lithuania <img src="Lithuania1.png" alt="Lithuania" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="luxembourg-list" data-toggle="list" href="#luxembourg-content" role="tab" aria-controls="#">Luxembourg <img src="Luxembourg1.png" alt="Luxembourg" class="float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexM" data-toggle="list" href="#" role="tab" aria-controls="#">M</a>
-            <a class="list-group-item list-group-item-action" id="malta-list" data-toggle="list" href="#malta-content" role="tab" aria-controls="#">Malta</a>
-            <a class="list-group-item list-group-item-action" id="moldova-list" data-toggle="list" href="#moldova-content" role="tab" aria-controls="#">Moldova</a>
-            <a class="list-group-item list-group-item-action" id="montenegro-list" data-toggle="list" href="#montenegro-content" role="tab" aria-controls="#">Montenegro</a>
+            <a class="list-group-item list-group-item-action" id="malta-list" data-toggle="list" href="#malta-content" role="tab" aria-controls="#">Malta <img src="Malta1.png" alt="Malta" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="moldova-list" data-toggle="list" href="#moldova-content" role="tab" aria-controls="#">Moldova <img src="Moldova1.png" alt="Moldova" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="montenegro-list" data-toggle="list" href="#montenegro-content" role="tab" aria-controls="#">Montenegro <img src="Montenegro1.png" alt="Montenegro" class="float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexN" data-toggle="list" href="#" role="tab" aria-controls="#">N</a>
-            <a class="list-group-item list-group-item-action" id="netherlands-list" data-toggle="list" href="#netherlands-content" role="tab" aria-controls="#">Netherlands</a>
-            <a class="list-group-item list-group-item-action" id="norway-list" data-toggle="list" href="#norway-content" role="tab" aria-controls="#">Norway</a>
+            <a class="list-group-item list-group-item-action" id="netherlands-list" data-toggle="list" href="#netherlands-content" role="tab" aria-controls="#">Netherlands <img src="Netherlands1.png" alt="Netherlands" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="norway-list" data-toggle="list" href="#norway-content" role="tab" aria-controls="#">Norway <img src="Norway1.png" alt="Norway" class="float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexP" data-toggle="list" href="#" role="tab" aria-controls="#">P</a>
-            <a class="list-group-item list-group-item-action" id="poland-list" data-toggle="list" href="#poland-content" role="tab" aria-controls="#">Poland</a>
-            <a class="list-group-item list-group-item-action active" id="portugal-list" data-toggle="list" href="#portugal-content" role="tab" aria-controls="#">Portugal</a>
+            <a class="list-group-item list-group-item-action" id="poland-list" data-toggle="list" href="#poland-content" role="tab" aria-controls="#">Poland <img src="Poland1.png" alt="Poland" class="float-right"></a>
+            <a class="list-group-item list-group-item-action active" id="portugal-list" data-toggle="list" href="#portugal-content" role="tab" aria-controls="#">Portugal <img src="Portugal1.png" alt="Portugal" class="float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexR" data-toggle="list" href="#" role="tab" aria-controls="#">R</a>
-            <a class="list-group-item list-group-item-action" id="romania-list" data-toggle="list" href="#romania-content" role="tab" aria-controls="#">Romania</a>
-            <a class="list-group-item list-group-item-action" id="russia-list" data-toggle="list" href="#russia-content" role="tab" aria-controls="#">Russia</a>
+            <a class="list-group-item list-group-item-action" id="romania-list" data-toggle="list" href="#romania-content" role="tab" aria-controls="#">Romania <img src="Romania1.png" alt="Romania" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="russia-list" data-toggle="list" href="#russia-content" role="tab" aria-controls="#">Russia <img src="Russia1.jpg" alt="Russia" class="float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexS" data-toggle="list" href="#" role="tab" aria-controls="#">S</a>
-            <a class="list-group-item list-group-item-action" id="serbia-list" data-toggle="list" href="#serbia-content" role="tab" aria-controls="#">Serbia</a>
-            <a class="list-group-item list-group-item-action" id="slovakia-list" data-toggle="list" href="#slovakia-content" role="tab" aria-controls="#">Slovakia</a>
-            <a class="list-group-item list-group-item-action" id="slovenia-list" data-toggle="list" href="#slovenia-content" role="tab" aria-controls="#">Slovenia</a>
-            <a class="list-group-item list-group-item-action" id="spain-list" data-toggle="list" href="#spain-content" role="tab" aria-controls="#">Spain</a>
-            <a class="list-group-item list-group-item-action" id="sweden-list" data-toggle="list" href="#sweden-content" role="tab" aria-controls="#">Sweden</a>
-            <a class="list-group-item list-group-item-action" id="switzerland-list" data-toggle="list" href="#switzerland-content" role="tab" aria-controls="#">Switzerland</a>
+            <a class="list-group-item list-group-item-action" id="serbia-list" data-toggle="list" href="#serbia-content" role="tab" aria-controls="#">Serbia <img src="Serbia1.png" alt="Serbia" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="slovakia-list" data-toggle="list" href="#slovakia-content" role="tab" aria-controls="#">Slovakia <img src="Slovakia1.png" alt="Slovakia" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="slovenia-list" data-toggle="list" href="#slovenia-content" role="tab" aria-controls="#">Slovenia <img src="Slovenia1.png" alt="Slovenia" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="spain-list" data-toggle="list" href="#spain-content" role="tab" aria-controls="#">Spain <img src="Spain1.png" alt="Spain" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="sweden-list" data-toggle="list" href="#sweden-content" role="tab" aria-controls="#">Sweden <img src="Sweden1.png" alt="Sweden" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="switzerland-list" data-toggle="list" href="#switzerland-content" role="tab" aria-controls="#">Switzerland <img src="Switzerland1.png" alt="Switzerland" class="float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexT" data-toggle="list" href="#" role="tab" aria-controls="#">T</a>
-            <a class="list-group-item list-group-item-action" id="turkey-list" data-toggle="list" href="#turkey-content" role="tab" aria-controls="#">Turkey</a>
+            <a class="list-group-item list-group-item-action" id="turkey-list" data-toggle="list" href="#turkey-content" role="tab" aria-controls="#">Turkey <img src="Turkey1.png" alt="Turkey" class="float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexU" data-toggle="list" href="#" role="tab" aria-controls="#">U</a>
-            <a class="list-group-item list-group-item-action" id="ukraine-list" data-toggle="list" href="#ukraine-content" role="tab" aria-controls="#">Ukraine</a>
-            <a class="list-group-item list-group-item-action" id="uk-list" data-toggle="list" href="#uk-content" role="tab" aria-controls="#">United Kingdom</a>
+            <a class="list-group-item list-group-item-action" id="ukraine-list" data-toggle="list" href="#ukraine-content" role="tab" aria-controls="#">Ukraine <img src="Ukraine1.png" alt="Ukraine" class="float-right"></a>
+            <a class="list-group-item list-group-item-action" id="uk-list" data-toggle="list" href="#uk-content" role="tab" aria-controls="#">United Kingdom <img src="United_Kingdom1.png" alt="United Kingdom" class="float-right"></a>
           </div>
         </div>
+
         <!--Conteudo do cartao-->
         <div class="col-8">
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active card card-body" id="portugal-content" role="tabpanel" aria-labelledby="portugal-list">
-              <p id="pt">portugal</p>
-            </div>
+          <div class="tab-content" id="nav-tabContent">            
             <div class="tab-pane fade card card-body" id="albania-content" role="tabpanel" aria-labelledby="albania-list">
-              <p>albania</p>
+                <h2>Albania</h2>
+                <p id="cntALB">Is situated in the Southeast of Europe. <br> 
+                    It is bounded by Montenegro to the northwest, Kosovo to the northeast, the Republic of Macedonia to the east and Greece to the south and southeast.</p>
             </div>
             <div class="tab-pane fade card card-body" id="armenia-content" role="tabpanel" aria-labelledby="armenia-list">
-              <p>armenia</p>
+                <h2>Armenia</h2>
+                <p></p>          
             </div>
             <div class="tab-pane fade card card-body" id="austria-content" role="tabpanel" aria-labelledby="austria-list">
-              <p>austria</p>
+                <h2>Austria</h2>
+                <p></p>            
             </div>
             <div class="tab-pane fade card card-body" id="azerbaijan-content" role="tabpanel" aria-labelledby="azerbaijan-list">
-              <p>azerbaijan</p>
+                <h2>Azerbaijan</h2>
+                <p></p>             
             </div>
             <div class="tab-pane fade card card-body" id="belarus-content" role="tabpanel" aria-labelledby="belarus-list">
-              <p>belarus</p>
+                <h2>Belarus</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="belgium-content" role="tabpanel" aria-labelledby="belgium-list">
-              <p>belgium</p>
+                <h2>Belgium</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="bosnia-content" role="tabpanel" aria-labelledby="bosnia-list">
-              <p>bosnia</p>
+                <h2>Bosnia and Herzegovina</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="bulgaria-content" role="tabpanel" aria-labelledby="bulgaria-list">
-              <p>bulgaria</p>
+                <h2>Bulgaria</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="croatia-content" role="tabpanel" aria-labelledby="croatia-list">
-              <p>croatia</p>
+                <h2>Croatia</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="cyprus-content" role="tabpanel" aria-labelledby="cyprus-list">
-              <p>cyprus</p>
+                <h2>Cyprus</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="czech-content" role="tabpanel" aria-labelledby="czech-list">
-              <p>czech</p>
+                <h2>Czech Republic</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="denmark-content" role="tabpanel" aria-labelledby="denmark-list">
-              <p>denmark</p>
+                <h2>Denmark</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="estonia-content" role="tabpanel" aria-labelledby="estonia-list">
-              <p>estonia</p>
+                <h2>Estonia</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="finland-content" role="tabpanel" aria-labelledby="finland-list">
-              <p>finland</p>
+                <h2>Finland</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="france-content" role="tabpanel" aria-labelledby="france-list">
-              <p>france</p>
+                <h2>France</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="georgia-content" role="tabpanel" aria-labelledby="georgia-list">
-              <p>georgia</p>
+                <h2>Georgia</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="germany-content" role="tabpanel" aria-labelledby="germany-list">
-              <p>germany</p>
+                <h2>Germany</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="greece-content" role="tabpanel" aria-labelledby="greece-list">
-              <p>greece</p>
+                <h2>Greece</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="hungary-content" role="tabpanel" aria-labelledby="hungary-list">
-              <p>hungary</p>
+                <h2>Hungary</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="iceland-content" role="tabpanel" aria-labelledby="iceland-list">
-              <p>iceland</p>
+                <h2>Iceland</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="ireland-content" role="tabpanel" aria-labelledby="ireland-list">
-              <p>ireland</p>
+                <h2>Ireland</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="italy-content" role="tabpanel" aria-labelledby="italy-list">
-              <p>italy</p>
+                <h2>Italy</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="kazakhstan-content" role="tabpanel" aria-labelledby="kazakhstan-list">
-              <p>kazakhstan</p>
+                <h2>Kazakhstan</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="latvia-content" role="tabpanel" aria-labelledby="latvia-list">
-              <p>latvia</p>
+                <h2>Latvia</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="lithuania-content" role="tabpanel" aria-labelledby="lithuania-list">
-              <p>lithuania</p>
+                <h2>Lithuania</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="luxembourg-content" role="tabpanel" aria-labelledby="luxembourg-list">
-              <p>luxembourg</p>
+                <h2>Luxembourg</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="malta-content" role="tabpanel" aria-labelledby="malta-list">
-              <p>malta</p>
+                <h2>Malta</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="moldova-content" role="tabpanel" aria-labelledby="moldova-list">
-              <p>moldova</p>
+                <h2>Moldova</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="montenegro-content" role="tabpanel" aria-labelledby="montenegro-list">
-              <p>montenegro</p>
+                <h2>Montenegro</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="netherlands-content" role="tabpanel" aria-labelledby="netherlands-list">
-              <p>netherlands</p>
+                <h2>Netherlands</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="norway-content" role="tabpanel" aria-labelledby="norway-list">
-              <p>norway</p>
+                <h2>Norway</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="poland-content" role="tabpanel" aria-labelledby="poland-list">
-              <p>poland</p>
+                <h2>Poland</h2>
+                <p></p> 
+            </div>
+            <div class="tab-pane fade card show active card card-body" id="portugal-content" role="tabpanel" aria-labelledby="portugal-list">
+                <h2>Portugal</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="romania-content" role="tabpanel" aria-labelledby="romania-list">
-              <p>romania</p>
+                <h2>Romania</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="russia-content" role="tabpanel" aria-labelledby="russia-list">
-              <p>russia</p>
+                <h2>Russia</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="serbia-content" role="tabpanel" aria-labelledby="serbia-list">
-              <p>serbia</p>
+                <h2>Serbia</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="slovakia-content" role="tabpanel" aria-labelledby="slovakia-list">
-              <p>slovakia</p>
+                <h2>Slovakia</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="slovenia-content" role="tabpanel" aria-labelledby="slovenia-list">
-              <p>slovenia</p>
+                <h2>Slovenia</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="spain-content" role="tabpanel" aria-labelledby="spain-list">
-              <p>spain</p>
+                <h2>Spain</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="sweden-content" role="tabpanel" aria-labelledby="sweden-list">
-              <p>sweden</p>
+                <h2>Sweden</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="switzerland-content" role="tabpanel" aria-labelledby="switzerland-list">
-              <p>switzerland</p>
+                <h2>Switzerland</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="turkey-content" role="tabpanel" aria-labelledby="turkey-list">
-              <p>turkey</p>
+                <h2>Turkey</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="ukraine-content" role="tabpanel" aria-labelledby="ukraine-list">
-              <p>ukraine</p>
+                <h2>Ukraine</h2>
+                <p></p>
             </div>
             <div class="tab-pane fade card card-body" id="uk-content" role="tabpanel" aria-labelledby="uk-list">
-              <p>uk</p>
+                <h2>United Kingdom</h2>
+                <p></p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div>
+        <h1>Top 10 Countries with more Population</h1>
+        <br>
+        <div>           
+            <input class="form-control" id="myInput" onkeyup="myFunction()" type="text" placeholder="Search..">
+                <table class="table table-striped">
+                    <thead>
+                        <th scope="col">#</th>
+                        <th scope="col">Country <br>(2018)</th>
+                        <th scope="col">Area <br>(Km²)</th>
+                        <th scope="col">Medium Age</th>
+                    </thead>
+                    <tbody id="myTable">
+                        <tr>
+                        <th scope="row">1</th>
+                        <td><a href="#russia-list">Russia</a></td> 
+                        <td>143,964,709	</td>
+                        <td>39</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">2</th>
+                        <td><a href="#germany-list">Germany</a></td>
+                        <td>82,293,457</td>
+                        <td>46</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">3</th>
+                        <td>
+                        <a href="#uk-list">United Kingdom</a></td>
+                        <td>66,573,504</td>
+                        <td>40</td>
+                        </tr>
+                        <th scope="row">4</th>
+                        <td><a href="#france-list">France</a></td>
+                        <td>65,233,271</td>
+                        <td>41</td>
+                        </tr>
+                        <th scope="row">5</th>
+                        <td><a href="#italy-list">Italy</a></td>
+                        <td>59,290,969	</td>
+                        <td>46</td>
+                        </tr>
+                        <th scope="row">6</th>
+                        <td><a href="#spain-list">Spain</a></td>
+                        <td>46,397,452</td>
+                        <td>43</td>
+                        </tr>
+                        <th scope="row">7</th>
+                        <td><a href="#ukraine-list">Ukraine</a></td>
+                        <td>44,009,214	</td>
+                        <td>40</td>
+                        </tr>
+                        <th scope="row">8</th>
+                        <td><a href="#poland-list">Poland</a></td>
+                        <td>38,104,832</td>
+                        <td>40</td>
+                        </tr>
+                        <th scope="row">9</th>
+                        <td><a href="#romania-list">Romania</a></td>
+                        <td>19,580,634	</td>
+                        <td>41</td>
+                        </tr>
+                        <th scope="row">10</th>
+                        <td><a href="#netherlands-list">Netherlands</a></td>
+                        <td>17,084,459</td>
+                        <td>42</td>
+                        </tr>                        
+                    </tbody>
+                </table>
+        </div>
+    </div>    
+    <!-- Não sei porque não está a dar... devia funcionar!!-->
+    <!-- É uma barra de pesquisa que encontrará um elemento da tabela, inside da tag body-->
+
     
+    
+
     <footer id="footer">
       <div class="text-white about">
-        <table>
-          <tr>
-            <th>Integer eget aliquet nibh praesent tristique magna.</th>
-          </tr>
-          <tr>
-            <td>Sed id semper risus in hendrerit gravida.</td>
-          </tr>
-          <tr>
-              <td>Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.</td>
-          </tr>
-        </table>
-        <table>
-          <th>Sit amet venenatis urna cursus eget nunc scelerisque viverra.</th>
-          <tr>
-            <td>Lacus vel facilisis volutpat est velit.</td>
-          </tr>
-          <tr>
-            <td>Urna id volutpat lacus laoreet non curabitur.</td>
-          </tr>
-        </table>
-      </div>
-      <div class="text-white about">
           <table>
-            <tr>
-              <th>Integer eget aliquet nibh praesent tristique magna.</th>
-            </tr>
-            <tr>
-              <td>Sed id semper risus in hendrerit gravida.</td>
-            </tr>
-            <tr>
-                <td>Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.</td>
-            </tr>
-          </table>
+              <th>About us:</th>
+              <tr>
+                <td>This Website- ELCP- was created by two students from ESMAD. 
+                <br>
+                With the intencion of providding amazing content to the users, <br> we created a website capable of running live numbers of current population in Europe <br> and in each european country.
+                <br>
+                We have no political, governmental, or corporate affiliation.
+                </td>
+              </tr>
+            </table>         
           <table>
-            <th>Sit amet venenatis urna cursus eget nunc scelerisque viverra.</th>
-            <tr>
-              <td>Lacus vel facilisis volutpat est velit.</td>
-            </tr>
-            <tr>
-              <td>Urna id volutpat lacus laoreet non curabitur.</td>
-            </tr>
-          </table>
+              <tr>
+                <th> <a href="https://www.google.com/maps/place/Escola+Superior+de+Media+Artes+e+Design/@41.3661522,-8.7416329,17z/data=!3m1!4b1!4m5!3m4!1s0xd244419ac8a36b3:0x9219b42064878c38!8m2!3d41.3661522!4d-8.7394442" target="_ablank" style="color: white;"> How to get to ESMAD</a></th>             
+              </tr>
+              <tr>
+                <td> <a href="https://www.esmad.ipp.pt/?set_language=en" target="_ablank" style="color: white;">School of Media Arts and Design</a> 
+                  <br> Rua D. Sancho I, n.º 981 <br> 4480-786 Vila do Conde <br> Portugal</td>
+              </tr>
+            </table>
         </div>
 
         <!--Social Media-->
@@ -306,16 +407,27 @@
           <a href="https://www.youtube.com/channel/UCARMgrCS_Fs33og7h3_bsIQ" target="_blank" title="YouTube" class="fa fa-youtube"></a>
           <a href="https://www.instagram.com/esmad_pporto/" target="_blank" title="Instagram" class="fa fa-instagram"></a>
         </div>
+
+        <hr>
+
+        <div class="copy">
+            © Copyright EuropeLiveInfo.com - All rights reserved 
+        </div>
     </footer>
 
     <!--Bootstrap JS-->
-    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+    <!--Versao Slim necessaria-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+ 
+    <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!--Our JS-->
     <script src="script.js"></script>
+
+    <script src="searchtablebar.js"></script>
+
 </body>
 </html>

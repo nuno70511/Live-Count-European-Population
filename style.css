@@ -2,7 +2,6 @@ html{
     scroll-behavior: smooth;
 }
 
-
 body{
     position: relative;
 }
@@ -60,7 +59,7 @@ footer{
     background-color: #343a40;
 }
 
-.copy{
+.cr{
     color: white;
     text-align: center;
 }
@@ -71,7 +70,7 @@ hr{
     border: 0;
     border-top: 1px solid white;
     margin: 1em 0;
-    padding: 0; 
+    padding: 0;
 }
 
 .about{
@@ -106,7 +105,7 @@ th{
 #cntALL{
     font-size: 700%;
     position: absolute;
-    top: 10%;
+    top: 30vh;
     left: 0;
     right: 0;
     color: whitesmoke;

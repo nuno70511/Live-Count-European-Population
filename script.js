@@ -17,7 +17,15 @@ $(window).ready(function(){
         var date = result.total_population.date;
         var population = result.total_population.population;
 
-        document.getElementById("cnt-all").innerHTML = population.toLocaleString();
+        document.getElementById("cnt-all").innerHTML += population.toLocaleString() + " people";
+    });
+
+    $.getJSON(urlPRT, function(result){
+        /* NAO eliminar a variavel "date" */
+        var date = result.total_population.date;
+        var population = result.total_population.population;
+
+        document.getElementById("cnt-prt").innerHTML += population.toLocaleString();
     });
  })
 
@@ -97,4 +105,6 @@ $('#list-tab a').on('click', function () {
     document.getElementById(cnt-alb).innerHTML = "MUDAR TEXTO";
 })
 */
+
+
 

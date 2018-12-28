@@ -101,13 +101,17 @@ th{
     background-position: center right;
 }
 
-#cnt-all{
-    font-size: 700%;
+#welcome{
     position: absolute;
-    top: 30vh;
     left: 0;
     right: 0;
+    top: 40vh;
+    text-align: center;
     color: whitesmoke;
+    /*
+    background-color: rgba(211, 211, 211, 0.3);
+    */
+    background-color: rgba(128, 128, 128, 0.3);
 }
 
 .flag-container{

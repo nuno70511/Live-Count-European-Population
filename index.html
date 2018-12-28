@@ -119,8 +119,13 @@
         <div class="col-8">
           <div class="tab-content" id="nav-tabContent">            
             <div class="tab-pane fade card card-body" id="albania-content" role="tabpanel" aria-labelledby="albania-list">
-              <h2>Albania</h2>
-              <p id="cntALB">Is situated in the Southeast of Europe.                  It is bounded by Montenegro to the northwest, Kosovo to the northeast, the Republic of Macedonia to the east and Greece to the south and southeast.</p>
+              <div class="flag-container">
+                <img src="imgs/Flag_of_Albania.svg" class="flag-bg" style="object-position: 100% 20%;">
+              </div>
+              <div class="text-container">
+                <h2>Albania</h2>
+                <p>Albania, on Southeastern Europe’s Balkan Peninsula, is a small country with Adriatic and Ionian coastlines and an interior crossed by the Albanian Alps. The country has many castles and archaeological sites. Capital Tirana centers on sprawling Skanderbeg Square, site of the National History Museum, with exhibits spanning antiquity to post-communism, and frescoed Et’hem Bey Mosque.</p>
+              </div>
             </div>
             <div class="tab-pane fade card card-body" id="armenia-content" role="tabpanel" aria-labelledby="armenia-list">
               <h2>Armenia</h2>
@@ -247,8 +252,13 @@
               <p></p> 
             </div>
             <div class="tab-pane fade card show active card card-body" id="portugal-content" role="tabpanel" aria-labelledby="portugal-list">
-              <h2>Portugal</h2>
-              <p></p>
+              <div class="flag-container">
+                <img src="imgs/Flag_of_Portugal.svg" class="flag-bg" style="object-position: 100% 40%;">
+              </div>
+              <div class="text-container">
+                <h2>Portugal</h2>
+                <p>Portugal is a southern European country on the Iberian Peninsula, bordering Spain. Its location on the Atlantic Ocean has influenced many aspects of its culture: salt cod and grilled sardines are national dishes, the Algarve's beaches are a major destination and much of the nation’s architecture dates to the 1500s–1800s, when Portugal had a powerful maritime empire.</p>
+              </div>
             </div>
             <div class="tab-pane fade card card-body" id="romania-content" role="tabpanel" aria-labelledby="romania-list">
               <h2>Romania</h2>
@@ -300,75 +310,64 @@
     </div>
 
     <div>
-        <h1>New Table</h1>
-        <br>
-        <div>           
-            <input class="form-control" id="myInput" onkeyup="myFunction()" type="text" placeholder="Search..">
-                <table class="table table-striped">
-                    <thead>
-                        <th scope="col">#</th>
-                        <th scope="col">Country <br>(2018)</th>
-                        <th scope="col">Population <br>(Km²)</th>
-                        <th scope="col">Medium Age</th>
-                    </thead>
-                    <tbody id="myTable">
-                        <tr>
-                        <th scope="row">1</th>
-                        <td><a href="#">...</a></td> 
-                        <td>#	</td>
-                        <td>#</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">2</th>
-                        <td><a href="#">...</a></td>
-                        <td>#</td>
-                        <td>#</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">3</th>
-                        <td>
-                        <a href="#">...</a></td>
-                        <td>#</td>
-                        <td>#</td>
-                        </tr>
-                        <th scope="row">4</th>
-                        <td><a href="#">...</a></td>
-                        <td>#</td>
-                        <td>#</td>
-                        </tr>
-                        <th scope="row">5</th>
-                        <td><a href="#">...</a></td>
-                        <td>#	</td>
-                        <td>#</td>
-                        </tr>
-                        <th scope="row">6</th>
-                        <td><a href="#">...</a></td>
-                        <td>#</td>
-                        <td>#</td>
-                        </tr>
-                        <th scope="row">7</th>
-                        <td><a href="#">...</a></td>
-                        <td>#	</td>
-                        <td>#</td>
-                        </tr>
-                        <th scope="row">8</th>
-                        <td><a href="#">...</a></td>
-                        <td>#</td>
-                        <td>#</td>
-                        </tr>
-                        <th scope="row">9</th>
-                        <td><a href="#">...</a></td>
-                        <td>#	</td>
-                        <td>#</td>
-                        </tr>
-                        <th scope="row">10</th>
-                        <td><a href="#">...</a></td>
-                        <td>#</td>
-                        <td>#</td>
-                        </tr>                        
-                    </tbody>
-                </table>
-        </div>
+      <h1>Statistics</h1>
+      <br>
+      <div>           
+        <input class="form-control" id="myInput" onkeyup="myFunction()" type="text" placeholder="Search..">
+        <table class="table table-striped">
+            <thead>
+                <th scope="col">#</th>
+                <th scope="col">Country</th>
+                <th scope="col">Population</th>
+            </thead>
+            <tbody id="myTable">
+                <tr>
+                <th scope="row">1</th>
+                <td><a href="#">...</a></td> 
+                <td>#	</td>
+                </tr>
+                <tr>
+                <th scope="row">2</th>
+                <td><a href="#">...</a></td>
+                <td>#</td>
+                </tr>
+                <tr>
+                <th scope="row">3</th>
+                <td>
+                <a href="#">...</a></td>
+                <td>#</td>
+                </tr>
+                <th scope="row">4</th>
+                <td><a href="#">...</a></td>
+                <td>#</td>
+                </tr>
+                <th scope="row">5</th>
+                <td><a href="#">...</a></td>
+                <td>#	</td>
+                </tr>
+                <th scope="row">6</th>
+                <td><a href="#">...</a></td>
+                <td>#</td>
+                </tr>
+                <th scope="row">7</th>
+                <td><a href="#">...</a></td>
+                <td>#	</td>
+                </tr>
+                <th scope="row">8</th>
+                <td><a href="#">...</a></td>
+                <td>#</td>
+                </tr>
+                <th scope="row">9</th>
+                <td><a href="#">...</a></td>
+                <td>#	</td>
+                </tr>
+                <th scope="row">10</th>
+                <td><a href="#">...</a></td>
+                <td>#</td>
+                </tr>                        
+            </tbody>
+        </table>
+      </div>
     </div>
 
     <footer id="footer">

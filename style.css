@@ -17,13 +17,9 @@ body{
     background-color: gray;
 }
 
-.card{
-    width: 20rem;
-}
-
 h1{
     text-align: center;
-    margin: 5% 0 0 0;
+    margin: 5% 0 2% 0;
 }
 
 .list-group{
@@ -31,7 +27,8 @@ h1{
 }
 
 .tab-pane{
-    margin: 5% 10% 0 0;
+    margin: 5% 10% 0 5%;
+    padding: 0
 }
 
 .row{
@@ -111,6 +108,28 @@ th{
     left: 0;
     right: 0;
     color: whitesmoke;
+}
+
+.flag-container{
+    width: 100%;
+    height: 30vh;
+}
+
+.flag-bg{
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text-container{
+    padding: 20px;
+}
+
+.flag-container > h2{
+    position: absolute;
+    bottom: 0;
 }
 
 .miniature-flag-2-by-3{

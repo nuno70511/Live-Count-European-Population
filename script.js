@@ -92,6 +92,9 @@ var urlUKR = "http://api.population.io:80/1.0/population/Ukraine/" + date;
 var urlGBR = "http://api.population.io:80/1.0/population/United%20Kingdom/" + date;
 
 
-$('#list-tab a').on('click', function (e) {
-    document.getElementsByClassName(p).innerHTML = "MUDAR TEXTO";
+/*
+$('#list-tab a').on('click', function () {
+    document.getElementById(cnt-alb).innerHTML = "MUDAR TEXTO";
 })
+*/
+

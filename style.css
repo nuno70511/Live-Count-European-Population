@@ -6,7 +6,7 @@ body{
     position: relative;
 }
 
-.bgImg{
+.bg-img{
     width: 100%;
     max-height: 100vh;
     position: relative;
@@ -44,6 +44,8 @@ h1{
     /* Para a borda superior do indice nao se sobrepor a do elemento acima, atribuir z-index de -1 */
     position: relative;
     z-index: -1;
+    font-weight: bold;
+    color: red;
 }
 
 .list-group{
@@ -102,13 +104,18 @@ th{
     background-position: center right;
 }
 
-#cntALL{
+#cnt-all{
     font-size: 700%;
     position: absolute;
     top: 30vh;
     left: 0;
     right: 0;
     color: whitesmoke;
+}
+
+.miniature-flag-2-by-3{
+    height: 30px;
+    width: 45px;
 }
 
 .favicons{

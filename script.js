@@ -17,7 +17,7 @@ $(window).ready(function(){
         var date = result.total_population.date;
         var population = result.total_population.population;
 
-        document.getElementById("cntALL").innerHTML = population.toLocaleString();
+        document.getElementById("cnt-all").innerHTML = population.toLocaleString();
     });
  })
 
@@ -92,16 +92,6 @@ var urlUKR = "http://api.population.io:80/1.0/population/Ukraine/" + date;
 var urlGBR = "http://api.population.io:80/1.0/population/United%20Kingdom/" + date;
 
 
-
-/*
-$(".albania-list").click(function(){
-    $.getJSON(urlALB, function(result){
-        /* NAO eliminar a variavel "date" 
-        var date = result.total_population.date;
-        var population = result.total_population.population;
-
-        document.getElementById("cntALB").innerHTML = population.toLocaleString();
-        console.log(result);
-    });
-});
-*/
+$('#list-tab a').on('click', function (e) {
+    document.getElementsByClassName(p).innerHTML = "MUDAR TEXTO";
+})

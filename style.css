@@ -119,8 +119,7 @@ th{
     height: 30vh;
 }
 
-.flag-bg{
-    object-fit: cover;
+.flag{
     position: relative;
     top: 0;
     width: 100%;

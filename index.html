@@ -14,20 +14,22 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="myNav">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand text-light" href="#">European Live Counting Population</a>
       
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item dropdown px-4">
-              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Countries</a>
-              <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item text-light" href="#">Action</a>
-                <a class="dropdown-item text-light" href="#">Another action</a>
-              </div>
+          <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+            <li class="nav-item px-4">
+              <a class="nav-link text-light" href="#">Statistics</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-light" href="#about-countries">Countries</a>
+            </li>
+            <a class="navbar-brand text-light px-4" href="#">European Live Counting Population</a>
+            <li class="nav-item px-4">
+              <a class="nav-link text-light" href="#">uso futuro</a>
             </li>
             <li class="nav-item px-4">
               <a class="nav-link text-light" href="#footer">About</a>
@@ -42,12 +44,12 @@
 
       <div id="welcome">
         <p id="cnt-all" style="font-size: 80px;"></p>
-        <p style="font-size: 40px;">live in Europe as of today.</p>
+        <p style="font-size: 40px;">persons live in Europe as of today.</p>
       </div>
     </div>
 
     <div>
-      <h1>Countries</h1>
+      <h1 id="about-countries">About Countries</h1>
 
       <div class="row">
         <!--Lista de paises-->
@@ -99,7 +101,7 @@
             <a class="list-group-item list-group-item-action" id="norway-list" data-toggle="list" href="#norway-content" role="tab" aria-controls="#">Norway <img src="imgs/Flag_of_Norway.svg" alt="Norway" class="miniature-flag-2-by-3 float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexP" data-toggle="list" href="#" role="tab" aria-controls="#">P</a>
             <a class="list-group-item list-group-item-action" id="poland-list" data-toggle="list" href="#poland-content" role="tab" aria-controls="#">Poland <img src="imgs/Flag_of_Poland.svg" alt="Poland" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action active" id="portugal-list" data-toggle="list" href="#portugal-content" role="tab" aria-controls="#">Portugal <img src="imgs/Flag_of_Portugal.svg" alt="Portugal" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action active" id="portugal-list" data-toggle="list" href="#portugal-content" role="tab" aria-controls="#">Portugal <img src="imgs/Flag_of_Portugal.svg" alt="Portugal" class="miniature-flag-2-by-3 float-right"</a>
             <a class="list-group-item list-group-item-action index" id="indexR" data-toggle="list" href="#" role="tab" aria-controls="#">R</a>
             <a class="list-group-item list-group-item-action" id="romania-list" data-toggle="list" href="#romania-content" role="tab" aria-controls="#">Romania <img src="imgs/Flag_of_Romania.svg" alt="Romania" class="miniature-flag-2-by-3 float-right"></a>
             <a class="list-group-item list-group-item-action" id="russia-list" data-toggle="list" href="#russia-content" role="tab" aria-controls="#">Russia <img src="imgs/Flag_of_Russia.svg" alt="Russia" class="miniature-flag-2-by-3 float-right"></a>
@@ -699,61 +701,327 @@
     </div>
 
     <div>
-      <h1>Statistics</h1>
+      <h1 id="statistics">Statistics</h1>
       <br>
       <div>           
-        <input class="form-control" id="myInput" onkeyup="myFunction()" type="text" placeholder="Search..">
+        <input class="form-control search" id="myInput" onkeyup="myFunction()" type="text" placeholder="Search...">
         <table class="table table-striped">
             <thead>
                 <th scope="col">#</th>
                 <th scope="col">Country</th>
                 <th scope="col">Population</th>
+                <th scope="col">Area <br> (Km²)</th>
+                <th scope="col">Medium Age</th>
             </thead>
             <tbody id="myTable">
                 <tr>
                 <th scope="row">1</th>
-                <td><a href="#">...</a></td> 
-                <td>#	</td>
+                <td><a href="#russia-list">Russia</a></td> 
+                <td>143,964,709	</td>
+                <td>16,376,870</td>
+                <td>39</td>
                 </tr>
                 <tr>
                 <th scope="row">2</th>
-                <td><a href="#">...</a></td>
-                <td>#</td>
+                <td><a href="#germany-list">Germany</a></td>
+                <td>82,293,457</td>
+                <td>348,560</td>
+                <td>46</td>
                 </tr>
                 <tr>
                 <th scope="row">3</th>
-                <td>
-                <a href="#">...</a></td>
-                <td>#</td>
+                <td><a href="#turkey-list">Turkey</a></td>
+                <td>81,916,871</td>
+                <td>769,630	</td>
+                <td>30</td>
                 </tr>
+                <tr>
                 <th scope="row">4</th>
-                <td><a href="#">...</a></td>
-                <td>#</td>
+                <td><a href="#france-list">France</a></td>
+                <td>67,372,000</td>
+                <td>547,557</td>
+                <td>41</td>
                 </tr>
+                <tr>
                 <th scope="row">5</th>
-                <td><a href="#">...</a></td>
-                <td>#	</td>
+                <td><a href="#uk-list">United Kingdom</a></td>
+                <td>66,040,229</td>
+                <td>241,930</td>
+                <td>40</td>
                 </tr>
+                <tr>
                 <th scope="row">6</th>
-                <td><a href="#">...</a></td>
-                <td>#</td>
+                <td><a href="#italy-list">Italy</a></td>
+                <td>59,290,969	</td>
+                <td>294,140</td>
+                <td>46</td>
                 </tr>
+                <tr>
                 <th scope="row">7</th>
-                <td><a href="#">...</a></td>
-                <td>#	</td>
+                <td><a href="#spain-list">Spain</a></td>
+                <td>46,397,452</td>
+                <td>498,800</td>
+                <td>43</td>
                 </tr>
+                <tr>
                 <th scope="row">8</th>
-                <td><a href="#">...</a></td>
-                <td>#</td>
+                <td><a href="#ukraine-list">Ukraine</a></td>
+                <td>44,009,214	</td>
+                <td>579,320</td>
+                <td>40</td>
                 </tr>
+                <tr>
                 <th scope="row">9</th>
-                <td><a href="#">...</a></td>
-                <td>#	</td>
+                <td><a href="#poland-list">Poland</a></td>
+                <td>38,104,832</td>
+                <td>306,230</td>
+                <td>40</td>
                 </tr>
+                <tr>
                 <th scope="row">10</th>
-                <td><a href="#">...</a></td>
-                <td>#</td>
-                </tr>                        
+                <td><a href="#romania-list">Romania</a></td>
+                <td>19,580,634	</td>
+                <td>230,170</td>
+                <td>41</td>
+                </tr>
+                <tr>
+                <th scope="row">11</th>
+                <td><a href="#kazakhstan-list">Kazakhstan</a></td>
+                <td>18,403,860</td>
+                <td>2,699,700</td>
+                <td>29</td>
+                </tr>
+                <tr>
+                <th scope="row">12</th>
+                <td><a href="#netherlands-list">Netherlands</a></td>
+                <td>17,084,459</td>
+                <td>33,720</td>
+                <td>42</td>
+                </tr>
+                <tr>
+                <th scope="row">13</th>
+                <td><a href="#belgium-list">Belgium</a></td>
+                <td>11,498,519</td>
+                <td>30,280</td>
+                <td>41</td>
+                </tr>
+                <tr>
+                <th scope="row">14</th>
+                <td><a href="#greece-list">Greece</a></td>
+                <td>11,142,161</td>
+                <td>128,900</td>
+                <td>43</td>
+                </tr>
+                <tr>
+                <th scope="row">15</th>
+                <td><a href="#czech-list">Czech Republic</a></td>
+                <td>10,625,250</td>
+                <td>77,240</td>
+                <td>41</td>
+                </tr>
+                <tr>
+                <th scope="row">16</th>
+                <td><a href="#portugal-list">Portugal</a></td>
+                <td>10,291,196</td>
+                <td>91,590</td>
+                <td>44</td>
+                </tr>
+                <tr>
+                <th scope="row">17</th>
+                <td><a href="#sweden-list">Sweden</a></td>
+                <td>9,982,709</td>
+                <td>410,340</td>
+                <td>41</td>
+                </tr>
+                <tr>
+                <th scope="row">18</th>
+                <td><a href="#azerbaijan-list">Azerbaijan</a></td>
+                <td>9,923,914</td>
+                <td>82,658</td>
+                <td>30</td>
+                </tr>
+                <tr>
+                <th scope="row">19</th>
+                <td><a href="#hungary-list">Hungary</a></td>
+                <td>9,688,847</td>
+                <td>90,530</td>
+                <td>42</td>
+                </tr>
+                <tr>
+                <th scope="row">20</th>
+                <td><a href="#belarus-list">Belarus</a></td>
+                <td>9,477,100</td>
+                <td>202,910</td>
+                <td>40</td>
+                </tr>
+                <tr>
+                <th scope="row">21</th>
+                <td><a href="#austria-list">Austria</a></td>
+                <td>8,857,960</td>
+                <td>82,409</td>
+                <td>43</td>
+                </tr>
+                <tr>
+                <th scope="row">22</th>
+                <td><a href="#switzerland-list">Switzerland</a></td>
+                <td>8,544,034	</td>
+                <td>39,516</td>
+                <td>42</td>
+                </tr>
+                <tr>
+                <th scope="row">23</th>
+                <td><a href="#bulgaria-list">Bulgaria</a></td>
+                <td>7,036,848</td>
+                <td>108,560</td>
+                <td>43</td>
+                </tr>
+                <tr>
+                <th scope="row">24</th>
+                <td><a href="#serbia-list">Serbia</a></td>
+                <td>7,001,444</td>
+                <td>87,460</td>
+                <td>40</td>
+                </tr>
+                <tr>
+                <th scope="row">25</th>
+                <td><a href="#denmark-list">Denmark</a></td>
+                <td>5,754,356</td>
+                <td>42,430</td>
+                <td>42</td>
+                </tr>
+                <tr>
+                <th scope="row">26</th>
+                <td><a href="#finland-list">Finland</a></td>
+                <td>5,542,517</td>
+                <td>303,890</td>
+                <td>42</td>
+                </tr>
+                <tr>
+                <th scope="row">27</th>
+                <td><a href="#slovakia-list">Slovakia</a></td>
+                <td>5,449,816</td>
+                <td>48,088</td>
+                <td>39</td>
+                </tr>
+                <tr>
+                <th scope="row">28</th>
+                <td><a href="#norway-list">Norway</a></td>
+                <td>5,353,363</td>
+                <td>365,268</td>
+                <td>39</td>
+                </tr>
+                <tr>                
+                <th scope="row">29</th>
+                <td><a href="#ireland-list">Ireland</a></td>
+                <td>4,803,748</td>
+                <td>68,890</td>
+                <td>37</td>
+                </tr>
+                <tr>
+                <th scope="row">30</th>
+                <td><a href="#croatia-list">Croatia</a></td>
+                <td>4,164,783</td>
+                <td>55,960</td>
+                <td>43</td>
+                </tr>
+                <tr>
+                <th scope="row">31</th>
+                <td><a href="#moldova-list">Moldava</a></td>
+                <td>4,041,065</td>
+                <td>32,850</td>
+                <td>36</td>
+                </tr>
+                <tr>
+                <th scope="row">32</th>
+                <td><a href="#georgia-list">Georgia</a></td>
+                <td>3,907,131</td>
+                <td>69,490</td>
+                <td>38</td>
+                </tr>
+                <tr>
+                <th scope="row">33</th>
+                <td><a href="#bosnia-list">Bosnia and Herzegovina</a></td>
+                <td>3,503,554</td>
+                <td>51,000</td>
+                <td>41</td>
+                </tr>
+                <tr>
+                <th scope="row">34</th>
+                <td><a href="#armenia-list">Armenia</a></td>
+                <td>2,969,200</td>
+                <td>28,470</td>
+                <td>34</td>
+                </tr>
+                <tr>
+                <th scope="row">35</th>
+                <td><a href="#albania-list">Albania</a></td>
+                <td>2,870,324</td>
+                <td>27,400</td>
+                <td>36</td>
+                </tr>
+                <tr>
+                <th scope="row">36</th>
+                <td><a href="#lithuania-list">Lithuania</a></td>
+                <td>2,794,134</td>
+                <td>62,674</td>
+                <td>43</td>
+                </tr>
+                <tr>
+                <th scope="row">37</th>
+                <td><a href="#slovenia-list">Slovenia</a></td>
+                <td>2,081,260</td>
+                <td>20,140</td>
+                <td>43</td>
+                </tr>
+                <tr>
+                <th scope="row">38</th>
+                <td><a href="#latvia-list">Latvia</a></td>
+                <td>1,929,938</td>
+                <td>62,200</td>
+                <td>43</td>
+                </tr>
+                <tr>
+                <th scope="row">39</th>
+                <td><a href="#estonia-list">Estonia</a></td>
+                <td>1,306,788</td>
+                <td>42,390</td>
+                <td>42</td>
+                </tr>
+                <tr>
+                <th scope="row">40</th>
+                <td><a href="#cyprus-list">Cyprus</a></td>
+                <td>1,189,085</td>
+                <td>9,240</td>
+                <td>35</td>
+                </tr> 
+                <tr>
+                <th scope="row">41</th>
+                <td><a href="#montenegro-list">Montenegro</a></td>
+                <td>629,219</td>
+                <td>13,450</td>
+                <td>38</td>
+                </tr>   
+                <tr> 
+                <th scope="row">42</th>
+                <td><a href="#luxembourg-list">Luxembourg</a></td>
+                <td>590,321</td>
+                <td>2,590</td>
+                <td>39</td>
+                </tr>    
+                <tr>
+                <th scope="row">43</th>
+                <td><a href="#malta-list">Malta</a></td>
+                <td>432,089</td>
+                <td>320</td>
+                <td>41</td>
+                </tr>    
+                <tr>
+                <th scope="row">44</th>
+                <td><a href="#iceland-list">Iceland</a></td>
+                <td>337,780</td>
+                <td>100,250</td>
+                <td>36</td>
+                </tr>                           
             </tbody>
         </table>
       </div>

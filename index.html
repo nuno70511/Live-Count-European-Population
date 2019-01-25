@@ -13,23 +13,22 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="myNav">
+<body id="main_page">
+  <!--
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <a class="navbar-brand text-light" href="#">European Live Counting Population</a>
       
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav m-auto mt-2 mt-lg-0">
-            <li class="nav-item px-4">
-              <a class="nav-link text-light" href="#">Statistics</a>
-            </li>
-            <li class="nav-item px-4">
-              <a class="nav-link text-light" href="#about-countries">Countries</a>
-            </li>
-            <a class="navbar-brand text-light px-4" href="#">European Live Counting Population</a>
-            <li class="nav-item px-4">
-              <a class="nav-link text-light" href="#">uso futuro</a>
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item dropdown px-4">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Countries</a>
+              <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-light" href="#about-countries">About Countries</a>
+                <a class="dropdown-item text-light" href="#statistics">Statistics</a>
+              </div>
             </li>
             <li class="nav-item px-4">
               <a class="nav-link text-light" href="#footer">About</a>
@@ -37,14 +36,24 @@
           </ul>
         </div>
     </nav>
+-->
 
+    <nav>
+      <ul id="example">
+        <li><a href="#main_page" class="active">European Live Counting Population</a></li>
+        <li><a href="#about-countries">About Countries</a></li>
+        <li><a href="#statistics">Statistics</a></li>
+        <li><a href="#">Another Menu</a></li>
+        <li><a href="#footer">About</a></li>
+      </ul>
+    </nav>
     <div>
       <!--Photo by Tom Grimbert on Unsplash-->
       <img class="bg-img" src="imgs/globo.jpg">
 
       <div id="welcome">
         <p id="cnt-all" style="font-size: 80px;"></p>
-        <p style="font-size: 40px;">persons live in Europe as of today.</p>
+        <p style="font-size: 40px;">people live in Europe as of today.</p>
       </div>
     </div>
 
@@ -56,67 +65,67 @@
         <div class="col-4">
           <div class="list-group list-group-flush" id="list-tab" role="tablist">
             <a class="list-group-item list-group-item-action index" id="indexA" data-toggle="list" href="#" role="tab" aria-controls="#">A</a>
-            <a class="list-group-item list-group-item-action" id="albania-list" data-toggle="list" href="#albania-content" role="tab" aria-controls="#">Albania<img src="imgs/Flag_of_Albania.svg" alt="Albania" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="armenia-list" data-toggle="list" href="#armenia-content" role="tab" aria-controls="#">Armenia<img src="imgs/Flag_of_Armenia.svg" alt="Armenia" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="austria-list" data-toggle="list" href="#austria-content" role="tab" aria-controls="#">Austria <img src="imgs/Flag_of_Austria.svg" alt="Austria" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="azerbaijan-list" data-toggle="list" href="#azerbaijan-content" role="tab" aria-controls="#">Azerbaijan <img src="imgs/Flag_of_Azerbaijan.svg" alt="Azerbaijan" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="albania-list" data-toggle="list" href="#albania-content" role="tab" aria-controls="#">Albania<img src="imgs/Flag_of_Albania.png" alt="Albania" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="armenia-list" data-toggle="list" href="#armenia-content" role="tab" aria-controls="#">Armenia<img src="imgs/Flag_of_Armenia.png" alt="Armenia" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="austria-list" data-toggle="list" href="#austria-content" role="tab" aria-controls="#">Austria <img src="imgs/Flag_of_Austria.png" alt="Austria" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="azerbaijan-list" data-toggle="list" href="#azerbaijan-content" role="tab" aria-controls="#">Azerbaijan <img src="imgs/Flag_of_Azerbaijan.png" alt="Azerbaijan" class="miniature-flag-2-by-3 float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexB" data-toggle="list" href="#" role="tab" aria-controls="#">B</a>
-            <a class="list-group-item list-group-item-action" id="belarus-list" data-toggle="list" href="#belarus-content" role="tab" aria-controls="#">Belarus <img src="imgs/Flag_of_Belarus.svg" alt="Belarus" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="belgium-list" data-toggle="list" href="#belgium-content" role="tab" aria-controls="#">Belgium <img src="imgs/Flag_of_Belgium.svg" alt="Belgium" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="bosnia-list" data-toggle="list" href="#bosnia-content" role="tab" aria-controls="#">Bosnia and Herzegovina <img src="imgs/Flag_of_Bosnia_and_Herzegovina.svg" alt="Bosnia and Herzegovina" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="bulgaria-list" data-toggle="list" href="#bulgaria-content" role="tab" aria-controls="#">Bulgaria <img src="imgs/Flag_of_Bulgaria.svg" alt="Bulgaria" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="belarus-list" data-toggle="list" href="#belarus-content" role="tab" aria-controls="#">Belarus <img src="imgs/Flag_of_Belarus.png" alt="Belarus" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="belgium-list" data-toggle="list" href="#belgium-content" role="tab" aria-controls="#">Belgium <img src="imgs/Flag_of_Belgium.png" alt="Belgium" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="bosnia-list" data-toggle="list" href="#bosnia-content" role="tab" aria-controls="#">Bosnia and Herzegovina <img src="imgs/Flag_of_Bosnia_and_Herzegovina.png" alt="Bosnia and Herzegovina" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="bulgaria-list" data-toggle="list" href="#bulgaria-content" role="tab" aria-controls="#">Bulgaria <img src="imgs/Flag_of_Bulgaria.png" alt="Bulgaria" class="miniature-flag-2-by-3 float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexC" data-toggle="list" href="#" role="tab" aria-controls="#">C</a>
-            <a class="list-group-item list-group-item-action" id="croatia-list" data-toggle="list" href="#croatia-content" role="tab" aria-controls="#">Croatia <img src="imgs/Flag_of_Croatia.svg" alt="Croatia" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="cyprus-list" data-toggle="list" href="#cyprus-content" role="tab" aria-controls="#">Cyprus <img src="imgs/Flag_of_Cyprus.svg" alt="Cyprus" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="czech-list" data-toggle="list" href="#czech-content" role="tab" aria-controls="#">Czech Republic <img src="imgs/Flag_of_the_Czech_Republic.svg" alt="Czech Republic" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="croatia-list" data-toggle="list" href="#croatia-content" role="tab" aria-controls="#">Croatia <img src="imgs/Flag_of_Croatia.png" alt="Croatia" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="cyprus-list" data-toggle="list" href="#cyprus-content" role="tab" aria-controls="#">Cyprus <img src="imgs/Flag_of_Cyprus.png" alt="Cyprus" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="czech-list" data-toggle="list" href="#czech-content" role="tab" aria-controls="#">Czech Republic <img src="imgs/Flag_of_the_Czech_Republic.png" alt="Czech Republic" class="miniature-flag-2-by-3 float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexD" data-toggle="list" href="#" role="tab" aria-controls="#">D</a>
-            <a class="list-group-item list-group-item-action" id="denmark-list" data-toggle="list" href="#denmark-content" role="tab" aria-controls="#">Denmark <img src="imgs/Flag_of_Denmark.svg" alt="Denmark" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="denmark-list" data-toggle="list" href="#denmark-content" role="tab" aria-controls="#">Denmark <img src="imgs/Flag_of_Denmark.png" alt="Denmark" class="miniature-flag-2-by-3 float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexE" data-toggle="list" href="#" role="tab" aria-controls="#">E</a>
-            <a class="list-group-item list-group-item-action" id="estonia-list" data-toggle="list" href="#estonia-content" role="tab" aria-controls="#">Estonia <img src="imgs/Flag_of_Estonia.svg" alt="Estonia" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="estonia-list" data-toggle="list" href="#estonia-content" role="tab" aria-controls="#">Estonia <img src="imgs/Flag_of_Estonia.png" alt="Estonia" class="miniature-flag-2-by-3 float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexF" data-toggle="list" href="#" role="tab" aria-controls="#">F</a>
-            <a class="list-group-item list-group-item-action" id="finland-list" data-toggle="list" href="#finland-content" role="tab" aria-controls="#">Finland <img src="imgs/Flag_of_Finland.svg" alt="Finland" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="france-list" data-toggle="list" href="#france-content" role="tab" aria-controls="#">France <img src="imgs/Flag_of_France.svg" alt="France" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="finland-list" data-toggle="list" href="#finland-content" role="tab" aria-controls="#">Finland <img src="imgs/Flag_of_Finland.png" alt="Finland" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="france-list" data-toggle="list" href="#france-content" role="tab" aria-controls="#">France <img src="imgs/Flag_of_France.png" alt="France" class="miniature-flag-2-by-3 float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexG" data-toggle="list" href="#" role="tab" aria-controls="#">G</a>
-            <a class="list-group-item list-group-item-action" id="georgia-list" data-toggle="list" href="#georgia-content" role="tab" aria-controls="#">Georgia <img src="imgs/Flag_of_Georgia.svg" alt="Georgia" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="germany-list" data-toggle="list" href="#germany-content" role="tab" aria-controls="#">Germany <img src="imgs/Flag_of_Germany.svg" alt="Germany" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="greece-list" data-toggle="list" href="#greece-content" role="tab" aria-controls="#">Greece <img src="imgs/Flag_of_Greece.svg" alt="Greece" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="georgia-list" data-toggle="list" href="#georgia-content" role="tab" aria-controls="#">Georgia <img src="imgs/Flag_of_Georgia.png" alt="Georgia" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="germany-list" data-toggle="list" href="#germany-content" role="tab" aria-controls="#">Germany <img src="imgs/Flag_of_Germany.png" alt="Germany" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="greece-list" data-toggle="list" href="#greece-content" role="tab" aria-controls="#">Greece <img src="imgs/Flag_of_Greece.png" alt="Greece" class="miniature-flag-2-by-3 float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexH" data-toggle="list" href="#" role="tab" aria-controls="#">H</a>
-            <a class="list-group-item list-group-item-action" id="hungary-list" data-toggle="list" href="#hungary-content" role="tab" aria-controls="#">Hungary <img src="imgs/Flag_of_Hungary.svg" alt="Hungary" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="hungary-list" data-toggle="list" href="#hungary-content" role="tab" aria-controls="#">Hungary <img src="imgs/Flag_of_Hungary.png" alt="Hungary" class="miniature-flag-2-by-3 float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexI" data-toggle="list" href="#" role="tab" aria-controls="#">I</a>
-            <a class="list-group-item list-group-item-action" id="iceland-list" data-toggle="list" href="#iceland-content" role="tab" aria-controls="#">Iceland <img src="imgs/Flag_of_Iceland.svg" alt="Iceland" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="ireland-list" data-toggle="list" href="#ireland-content" role="tab" aria-controls="#">Ireland <img src="imgs/Flag_of_Ireland.svg" alt="Ireland" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="italy-list" data-toggle="list" href="#italy-content" role="tab" aria-controls="#">Italy <img src="imgs/Flag_of_Italy.svg" alt="Italy" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="iceland-list" data-toggle="list" href="#iceland-content" role="tab" aria-controls="#">Iceland <img src="imgs/Flag_of_Iceland.png" alt="Iceland" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="ireland-list" data-toggle="list" href="#ireland-content" role="tab" aria-controls="#">Ireland <img src="imgs/Flag_of_Ireland.png" alt="Ireland" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="italy-list" data-toggle="list" href="#italy-content" role="tab" aria-controls="#">Italy <img src="imgs/Flag_of_Italy.png" alt="Italy" class="miniature-flag-2-by-3 float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexK" data-toggle="list" href="#" role="tab" aria-controls="#">K</a>
-            <a class="list-group-item list-group-item-action" id="kazakhstan-list" data-toggle="list" href="#kazakhstan-content" role="tab" aria-controls="#">Kazakhstan <img src="imgs/Flag_of_Kazakhstan.svg" alt="Kazakhstan" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="kazakhstan-list" data-toggle="list" href="#kazakhstan-content" role="tab" aria-controls="#">Kazakhstan <img src="imgs/Flag_of_Kazakhstan.png" alt="Kazakhstan" class="miniature-flag-2-by-3 float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexL" data-toggle="list" href="#" role="tab" aria-controls="#">L</a>
-            <a class="list-group-item list-group-item-action" id="latvia-list" data-toggle="list" href="#latvia-content" role="tab" aria-controls="#">Latvia <img src="imgs/Flag_of_Latvia.svg" alt="Latvia" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="lithuania-list" data-toggle="list" href="#lithuania-content" role="tab" aria-controls="#">Lithuania <img src="imgs/Flag_of_Lithuania.svg" alt="Lithuania" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="luxembourg-list" data-toggle="list" href="#luxembourg-content" role="tab" aria-controls="#">Luxembourg <img src="imgs/Flag_of_Luxembourg.svg" alt="Luxembourg" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="latvia-list" data-toggle="list" href="#latvia-content" role="tab" aria-controls="#">Latvia <img src="imgs/Flag_of_Latvia.png" alt="Latvia" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="lithuania-list" data-toggle="list" href="#lithuania-content" role="tab" aria-controls="#">Lithuania <img src="imgs/Flag_of_Lithuania.png" alt="Lithuania" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="luxembourg-list" data-toggle="list" href="#luxembourg-content" role="tab" aria-controls="#">Luxembourg <img src="imgs/Flag_of_Luxembourg.png" alt="Luxembourg" class="miniature-flag-2-by-3 float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexM" data-toggle="list" href="#" role="tab" aria-controls="#">M</a>
-            <a class="list-group-item list-group-item-action" id="malta-list" data-toggle="list" href="#malta-content" role="tab" aria-controls="#">Malta <img src="imgs/Flag_of_Malta.svg" alt="Malta" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="moldova-list" data-toggle="list" href="#moldova-content" role="tab" aria-controls="#">Moldova <img src="imgs/Flag_of_Moldova.svg" alt="Moldova" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="montenegro-list" data-toggle="list" href="#montenegro-content" role="tab" aria-controls="#">Montenegro <img src="imgs/Flag_of_Montenegro.svg" alt="Montenegro" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="malta-list" data-toggle="list" href="#malta-content" role="tab" aria-controls="#">Malta <img src="imgs/Flag_of_Malta.png" alt="Malta" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="moldova-list" data-toggle="list" href="#moldova-content" role="tab" aria-controls="#">Moldova <img src="imgs/Flag_of_Moldova.png" alt="Moldova" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="montenegro-list" data-toggle="list" href="#montenegro-content" role="tab" aria-controls="#">Montenegro <img src="imgs/Flag_of_Montenegro.png" alt="Montenegro" class="miniature-flag-2-by-3 float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexN" data-toggle="list" href="#" role="tab" aria-controls="#">N</a>
-            <a class="list-group-item list-group-item-action" id="netherlands-list" data-toggle="list" href="#netherlands-content" role="tab" aria-controls="#">Netherlands <img src="imgs/Flag_of_the_Netherlands.svg" alt="Netherlands" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="norway-list" data-toggle="list" href="#norway-content" role="tab" aria-controls="#">Norway <img src="imgs/Flag_of_Norway.svg" alt="Norway" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="netherlands-list" data-toggle="list" href="#netherlands-content" role="tab" aria-controls="#">Netherlands <img src="imgs/Flag_of_the_Netherlands.png" alt="Netherlands" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="norway-list" data-toggle="list" href="#norway-content" role="tab" aria-controls="#">Norway <img src="imgs/Flag_of_Norway.png" alt="Norway" class="miniature-flag-2-by-3 float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexP" data-toggle="list" href="#" role="tab" aria-controls="#">P</a>
-            <a class="list-group-item list-group-item-action" id="poland-list" data-toggle="list" href="#poland-content" role="tab" aria-controls="#">Poland <img src="imgs/Flag_of_Poland.svg" alt="Poland" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action active" id="portugal-list" data-toggle="list" href="#portugal-content" role="tab" aria-controls="#">Portugal <img src="imgs/Flag_of_Portugal.svg" alt="Portugal" class="miniature-flag-2-by-3 float-right"</a>
+            <a class="list-group-item list-group-item-action" id="poland-list" data-toggle="list" href="#poland-content" role="tab" aria-controls="#">Poland <img src="imgs/Flag_of_Poland.png" alt="Poland" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action active" id="portugal-list" data-toggle="list" href="#portugal-content" role="tab" aria-controls="#">Portugal <img src="imgs/Flag_of_Portugal.png" alt="Portugal" class="miniature-flag-2-by-3 float-right"</a>
             <a class="list-group-item list-group-item-action index" id="indexR" data-toggle="list" href="#" role="tab" aria-controls="#">R</a>
-            <a class="list-group-item list-group-item-action" id="romania-list" data-toggle="list" href="#romania-content" role="tab" aria-controls="#">Romania <img src="imgs/Flag_of_Romania.svg" alt="Romania" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="russia-list" data-toggle="list" href="#russia-content" role="tab" aria-controls="#">Russia <img src="imgs/Flag_of_Russia.svg" alt="Russia" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="romania-list" data-toggle="list" href="#romania-content" role="tab" aria-controls="#">Romania <img src="imgs/Flag_of_Romania.png" alt="Romania" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="russia-list" data-toggle="list" href="#russia-content" role="tab" aria-controls="#">Russia <img src="imgs/Flag_of_Russia.png" alt="Russia" class="miniature-flag-2-by-3 float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexS" data-toggle="list" href="#" role="tab" aria-controls="#">S</a>
-            <a class="list-group-item list-group-item-action" id="serbia-list" data-toggle="list" href="#serbia-content" role="tab" aria-controls="#">Serbia <img src="imgs/Flag_of_Serbia.svg" alt="Serbia" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="slovakia-list" data-toggle="list" href="#slovakia-content" role="tab" aria-controls="#">Slovakia <img src="imgs/Flag_of_Slovakia.svg" alt="Slovakia" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="slovenia-list" data-toggle="list" href="#slovenia-content" role="tab" aria-controls="#">Slovenia <img src="imgs/Flag_of_Slovenia.svg" alt="Slovenia" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="spain-list" data-toggle="list" href="#spain-content" role="tab" aria-controls="#">Spain <img src="imgs/Flag_of_Spain.svg" alt="Spain" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="sweden-list" data-toggle="list" href="#sweden-content" role="tab" aria-controls="#">Sweden <img src="imgs/Flag_of_Sweden.svg" alt="Sweden" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="switzerland-list" data-toggle="list" href="#switzerland-content" role="tab" aria-controls="#">Switzerland <img src="imgs/Flag_of_Switzerland_(Pantone).svg" alt="Switzerland" class="float-right" style="width: 30px; height: 30px;"></a>
+            <a class="list-group-item list-group-item-action" id="serbia-list" data-toggle="list" href="#serbia-content" role="tab" aria-controls="#">Serbia <img src="imgs/Flag_of_Serbia.png" alt="Serbia" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="slovakia-list" data-toggle="list" href="#slovakia-content" role="tab" aria-controls="#">Slovakia <img src="imgs/Flag_of_Slovakia.png" alt="Slovakia" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="slovenia-list" data-toggle="list" href="#slovenia-content" role="tab" aria-controls="#">Slovenia <img src="imgs/Flag_of_Slovenia.png" alt="Slovenia" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="spain-list" data-toggle="list" href="#spain-content" role="tab" aria-controls="#">Spain <img src="imgs/Flag_of_Spain.png" alt="Spain" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="sweden-list" data-toggle="list" href="#sweden-content" role="tab" aria-controls="#">Sweden <img src="imgs/Flag_of_Sweden.png" alt="Sweden" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="switzerland-list" data-toggle="list" href="#switzerland-content" role="tab" aria-controls="#">Switzerland <img src="imgs/Flag_of_Switzerland_(Pantone).png" alt="Switzerland" class="float-right" style="width: 30px; height: 30px;"></a>
             <a class="list-group-item list-group-item-action index" id="indexT" data-toggle="list" href="#" role="tab" aria-controls="#">T</a>
-            <a class="list-group-item list-group-item-action" id="turkey-list" data-toggle="list" href="#turkey-content" role="tab" aria-controls="#">Turkey <img src="imgs/Flag_of_Turkey.svg" alt="Turkey" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="turkey-list" data-toggle="list" href="#turkey-content" role="tab" aria-controls="#">Turkey <img src="imgs/Flag_of_Turkey.png" alt="Turkey" class="miniature-flag-2-by-3 float-right"></a>
             <a class="list-group-item list-group-item-action index" id="indexU" data-toggle="list" href="#" role="tab" aria-controls="#">U</a>
-            <a class="list-group-item list-group-item-action" id="ukraine-list" data-toggle="list" href="#ukraine-content" role="tab" aria-controls="#">Ukraine <img src="imgs/Flag_of_Ukraine.svg" alt="Ukraine" class="miniature-flag-2-by-3 float-right"></a>
-            <a class="list-group-item list-group-item-action" id="uk-list" data-toggle="list" href="#uk-content" role="tab" aria-controls="#">United Kingdom <img src="imgs/Flag_of_the_United_Kingdom.svg" alt="United Kingdom" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="ukraine-list" data-toggle="list" href="#ukraine-content" role="tab" aria-controls="#">Ukraine <img src="imgs/Flag_of_Ukraine.png" alt="Ukraine" class="miniature-flag-2-by-3 float-right"></a>
+            <a class="list-group-item list-group-item-action" id="uk-list" data-toggle="list" href="#uk-content" role="tab" aria-controls="#">United Kingdom <img src="imgs/Flag_of_the_United_Kingdom.png" alt="United Kingdom" class="miniature-flag-2-by-3 float-right"></a>
           </div>
         </div>
 
@@ -125,571 +134,622 @@
           <div class="tab-content" id="nav-tabContent">            
             <div class="tab-pane fade card card-body" id="albania-content" role="tabpanel" aria-labelledby="albania-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Albania.svg" class="flag" style="object-position: 100% 20%; object-fit: cover;">
+                <img src="imgs/Flag_of_Albania.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Albania</h2>
                 <br>
-                <h3 id="cnt-alb">Today's population: </h3>
+                <h3 class="alb_header2" id="cnt-alb">Today's population: </h3>
                 <br>
-                <p>Albania, on Southeastern Europe’s Balkan Peninsula, is a small country with Adriatic and Ionian coastlines and an interior crossed by the Albanian Alps. The country has many castles and archaeological sites. Capital Tirana centers on sprawling Skanderbeg Square, site of the National History Museum, with exhibits spanning antiquity to post-communism, and frescoed Et’hem Bey Mosque.</p>
+                <p id="albaniaText">Albania, on Southeastern Europe’s Balkan Peninsula, is a small country with Adriatic and Ionian coastlines and an interior crossed by the Albanian Alps. The country has many castles and archaeological sites. Capital Tirana centers on sprawling Skanderbeg Square, site of the National History Museum, with exhibits spanning antiquity to post-communism, and frescoed Et’hem Bey Mosque.</p>
+                <button onclick="TranslateALB()">Translate</button>
+                <br>
                 <a href="https://en.wikipedia.org/wiki/Albania" target="_blank">Get to know more about Albania</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="armenia-content" role="tabpanel" aria-labelledby="armenia-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Armenia.svg" class="flag" style="object-position: 100% 50%; object-fit: fill;">
+                <img src="imgs/Flag_of_Armenia.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Armenia</h2>
                 <br>
                 <h3 id="cnt-arm">Today's population: </h3>
                 <br>
-                <p>Armenia is a nation, and former Soviet republic, in the mountainous Caucasus region between Asia and Europe. Among the earliest Christian civilizations, it’s defined by religious sites including the Greco-Roman Temple of Garni and 4th-century Etchmiadzin Cathedral, headquarters of the Armenian Church. Khor Virap Monastery is a pilgrimage site near Mount Ararat, a dormant volcano just across the border in Turkey.</p>
+                <p id="armeniaText">Armenia is a nation, and former Soviet republic, in the mountainous Caucasus region between Asia and Europe. Among the earliest Christian civilizations, it’s defined by religious sites including the Greco-Roman Temple of Garni and 4th-century Etchmiadzin Cathedral, headquarters of the Armenian Church. Khor Virap Monastery is a pilgrimage site near Mount Ararat, a dormant volcano just across the border in Turkey.</p>
+                <button onclick="TranslateARM()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Armenia" target="_blank">Get to know more about Armenia</a>
               </div>         
             </div>
             <div class="tab-pane fade card card-body" id="austria-content" role="tabpanel" aria-labelledby="austria-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Austria.svg" class="flag" style="object-position: 100% 50%; object-fit: fill;">
+                <img src="imgs/Flag_of_Austria.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Austria</h2>
                 <br>
                 <h3 id="cnt-aut">Today's population: </h3>
                 <br>
-                <p>Austria is a German-speaking country in Central Europe, characterized by mountain villages, baroque architecture, Imperial history and rugged Alpine terrain. Vienna, its Danube River capital, is home to the Schönbrunn and Hofburg palaces. It has counted Mozart, Strauss and Freud among its residents. The country’s other notable regions include the northern Bohemian Forest, Traunsee Lake and eastern hillside vineyards.</p>
+                <p id="austriaText">Austria is a German-speaking country in Central Europe, characterized by mountain villages, baroque architecture, Imperial history and rugged Alpine terrain. Vienna, its Danube River capital, is home to the Schönbrunn and Hofburg palaces. It has counted Mozart, Strauss and Freud among its residents. The country’s other notable regions include the northern Bohemian Forest, Traunsee Lake and eastern hillside vineyards.</p>
+                <button onclick="TranslateAUSgermany()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Austria" target="_blank">Get to know more about Austria</a>
               </div>            
             </div>
             <div class="tab-pane fade card card-body" id="azerbaijan-content" role="tabpanel" aria-labelledby="azerbaijan-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Azerbaijan.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Azerbaijan.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Azerbaijan</h2>
                 <br>
                 <h3 id="cnt-aze">Today's population: </h3>
                 <br>
-                <p>Azerbaijan, the nation and former Soviet republic, is bounded by the Caspian Sea and Caucasus Mountains, which span Asia and Europe. Its capital, Baku, is famed for its medieval walled Inner City. Within the Inner City lies the Palace of the Shirvanshahs, a royal retreat dating to the 15th century, and the centuries-old stone Maiden Tower, which dominates the city skyline.</p>
+                <p id="azerbeijanText">Azerbaijan, the nation and former Soviet republic, is bounded by the Caspian Sea and Caucasus Mountains, which span Asia and Europe. Its capital, Baku, is famed for its medieval walled Inner City. Within the Inner City lies the Palace of the Shirvanshahs, a royal retreat dating to the 15th century, and the centuries-old stone Maiden Tower, which dominates the city skyline.</p>
+                <button onclick="TranslateAZE()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Azerbaijan" target="_blank">Get to know more about Azerbaijan</a>
               </div>              
             </div>
             <div class="tab-pane fade card card-body" id="belarus-content" role="tabpanel" aria-labelledby="belarus-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Belarus.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Belarus.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Belarus</h2>
                 <br>
                 <h3 id="cnt-blr">Today's population: </h3>
                 <br>
-                <p>Belarus, a landlocked country in Eastern Europe, is known for its Stalinist architecture, grand fortifications and primeval forests. In the modern capital, Minsk, the monumental KGB Headquarters loom over Independence Square, while the Museum of the Great Patriotic War commemorates the country’s role in WWII. The capital is also home to many churches, including the neo-Romanesque Church of Saints Simon and Helena.</p>
+                <p id="belarusText">Belarus, a landlocked country in Eastern Europe, is known for its Stalinist architecture, grand fortifications and primeval forests. In the modern capital, Minsk, the monumental KGB Headquarters loom over Independence Square, while the Museum of the Great Patriotic War commemorates the country’s role in WWII. The capital is also home to many churches, including the neo-Romanesque Church of Saints Simon and Helena.</p>
+                <button onclick="TranslateBLR()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Belarus" target="_blank">Get to know more about Belarus</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="belgium-content" role="tabpanel" aria-labelledby="belgium-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Belgium.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Belgium.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Belgium</h2>
                 <br>
                 <h3 id="cnt-bel">Today's population: </h3>
                 <br>
-                <p>Belgium, a country in Western Europe, is known for medieval towns, Renaissance architecture and as headquarters of the European Union and NATO. The country has distinctive regions including Dutch-speaking Flanders to the north, French-speaking Wallonia to the south and a German-speaking community to the east. The bilingual capital, Brussels, has ornate guildhalls at Grand-Place and elegant art-nouveau buildings.</p>
+                <p id="belgiumText">Belgium, a country in Western Europe, is known for medieval towns, Renaissance architecture and as headquarters of the European Union and NATO. The country has distinctive regions including Dutch-speaking Flanders to the north, French-speaking Wallonia to the south and a German-speaking community to the east. The bilingual capital, Brussels, has ornate guildhalls at Grand-Place and elegant art-nouveau buildings.</p>
+                <button onclick="TranslateBEL()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Belgium" target="_blank">Get to know more about Belgium</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="bosnia-content" role="tabpanel" aria-labelledby="bosnia-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Bosnia_and_Herzegovina.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Bosnia_and_Herzegovina.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Bosnia and Herzegovina</h2>
                 <br>
                 <h3 id="cnt-bih">Today's population: </h3>
                 <br>
-                <p>Bosnia and Herzegovina is a country on the Balkan Peninsula in southeastern Europe. Its countryside is home to medieval villages, rivers and lakes, plus the craggy Dinaric Alps. National capital Sarajevo has a well preserved old quarter, Baščaršija, with landmarks like 16th-century Gazi Husrev-bey Mosque. Ottoman-era Latin Bridge is the site of the assassination of Archduke Franz Ferdinand, which ignited World War I.</p>
+                <p id="bosniaText">Bosnia and Herzegovina is a country on the Balkan Peninsula in southeastern Europe. Its countryside is home to medieval villages, rivers and lakes, plus the craggy Dinaric Alps. National capital Sarajevo has a well preserved old quarter, Baščaršija, with landmarks like 16th-century Gazi Husrev-bey Mosque. Ottoman-era Latin Bridge is the site of the assassination of Archduke Franz Ferdinand, which ignited World War I.</p>
+                <button onclick="TranslateBIH()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina" target="_blank">Get to know more about Bosnia and Herzegovina</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="bulgaria-content" role="tabpanel" aria-labelledby="bulgaria-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Bulgaria.svg" class="flag" style="object-position: 100% 50%; object-fit: fill;">
+                <img src="imgs/Flag_of_Bulgaria.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Bulgaria</h2>
                 <br>
                 <h3 id="cnt-bgr">Today's population: </h3>
                 <br>
-                <p>Bulgaria is a Balkan nation with diverse terrain encompassing Black Sea coastline, a mountainous interior and rivers, including the Danube. A cultural melting pot with Greek, Slavic, Ottoman, and Persian influences, it has a rich heritage of traditional dance, music, costumes, and crafts. At the foot of domed Vitosha mountain is its capital city, Sofia, dating to the 5th century B.C.</p>
+                <p id="bulgariaText">Bulgaria is a Balkan nation with diverse terrain encompassing Black Sea coastline, a mountainous interior and rivers, including the Danube. A cultural melting pot with Greek, Slavic, Ottoman, and Persian influences, it has a rich heritage of traditional dance, music, costumes, and crafts. At the foot of domed Vitosha mountain is its capital city, Sofia, dating to the 5th century B.C.</p>
+                <button onclick="TranslateBGR()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Bulgaria" target="_blank">Get to know more about Bulgaria</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="croatia-content" role="tabpanel" aria-labelledby="croatia-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Croatia.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Croatia.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Croatia</h2>
                 <br>
                 <h3 id="cnt-hrv">Today's population: </h3>
                 <br>
-                <p>Croatia, officially the Republic of Croatia is a country at the crossroads of Central and Southeast Europe, on the Adriatic Sea. It borders Slovenia to the northwest, Hungary to the northeast, Serbia to the east, Bosnia and Herzegovina and Montenegro to the southeast, sharing a maritime border with Italy.</p>
+                <p id="croatiaText">Croatia, officially the Republic of Croatia is a country at the crossroads of Central and Southeast Europe, on the Adriatic Sea. It borders Slovenia to the northwest, Hungary to the northeast, Serbia to the east, Bosnia and Herzegovina and Montenegro to the southeast, sharing a maritime border with Italy.</p>
+                <button onclick="TranslateHRV()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Croatia" target="_blank">Get to know more about Croatia</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="cyprus-content" role="tabpanel" aria-labelledby="cyprus-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Cyprus.svg" class="flag" style="object-position: 100% 60%; object-fit: cover;">
+                <img src="imgs/Flag_of_Cyprus.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Cyprus</h2>
                 <br>
                 <h3 id="cnt-cyp">Today's population: </h3>
                 <br>
-                <p>Cyprus, officially the Republic of Cyprus, is an island country in the Eastern Mediterranean and the third largest and third most populous island in the Mediterranean, located south of Turkey, west of Syria and Lebanon, northwest of Israel, north of Egypt, and southeast of Greece.</p>
+                <p id="cyprusText">Cyprus, officially the Republic of Cyprus, is an island country in the Eastern Mediterranean and the third largest and third most populous island in the Mediterranean, located south of Turkey, west of Syria and Lebanon, northwest of Israel, north of Egypt, and southeast of Greece.</p>
+                <button onclick="TranslateCYP()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Cyprus" target="_blank">Get to know more about Cyprus</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="czech-content" role="tabpanel" aria-labelledby="czech-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_the_Czech_Republic.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_the_Czech_Republic.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Czech Republic</h2>
                 <br>
                 <h3 id="cnt-cze">Today's population: </h3>
                 <br>
-                <p>The Czech Republic, in Central Europe, is a country that's known for its ornate castles, native beers and long history. Prague, the capital, is home to grand 9th-century Prague Castle, a preserved medieval old town and statue-lined Charles Bridge. Český Krumlov, a small town in the South Bohemia region, is notable for its wealth of Gothic, Renaissance and Baroque buildings, many of which house restaurants and shops.</p>
+                <p id="czechText">The Czech Republic, in Central Europe, is a country that's known for its ornate castles, native beers and long history. Prague, the capital, is home to grand 9th-century Prague Castle, a preserved medieval old town and statue-lined Charles Bridge. Český Krumlov, a small town in the South Bohemia region, is notable for its wealth of Gothic, Renaissance and Baroque buildings, many of which house restaurants and shops.</p>
+                <button onclick="TranslateCZE()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Czech_Republic" target="_blank">Get to know more about the Czech Republic</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="denmark-content" role="tabpanel" aria-labelledby="denmark-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Denmark.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Denmark.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Denmark</h2>
                 <br>
                 <h3 id="cnt-dnk">Today's population: </h3>
                 <br>
-                <p>Denmark is a Scandinavian country comprising the Jutland Peninsula and numerous islands. It's linked to nearby Sweden via the Öresund bridge. Copenhagen, its capital, is home to royal palaces and colorful Nyhavn harbor, plus the Tivoli amusement park and the iconic “Little Mermaid” statue. Odense is writer Hans Christian Andersen’s hometown, with a medieval core of cobbled streets and half-timbered houses.</p>
+                <p id="denmarkText">Denmark is a Scandinavian country comprising the Jutland Peninsula and numerous islands. It's linked to nearby Sweden via the Öresund bridge. Copenhagen, its capital, is home to royal palaces and colorful Nyhavn harbor, plus the Tivoli amusement park and the iconic “Little Mermaid” statue. Odense is writer Hans Christian Andersen’s hometown, with a medieval core of cobbled streets and half-timbered houses.</p>
+                <button onclick="TranslateDNK()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Denmark" target="_blank">Get to know more about Denmark</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="estonia-content" role="tabpanel" aria-labelledby="estonia-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Estonia.svg" class="flag" style="object-position: 100% 50%; object-fit: fill;">
+                <img src="imgs/Flag_of_Estonia.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Estonia</h2>
                 <br>
                 <h3 id="cnt-est">Today's population: </h3>
                 <br>
-                <p>Estonia, a country in Northern Europe, borders the Baltic Sea and Gulf of Finland. Including more than 1,500 islands, its diverse terrain spans rocky beaches, old-growth forest and many lakes. Formerly part of the Soviet Union, it's dotted with castles, churches and hilltop fortresses. The capital, Tallinn, is known for its preserved Old Town, museums and the 314m-high Tallinn TV Tower, which has an observation deck.</p>
+                <p id="estoniaText">Estonia, a country in Northern Europe, borders the Baltic Sea and Gulf of Finland. Including more than 1,500 islands, its diverse terrain spans rocky beaches, old-growth forest and many lakes. Formerly part of the Soviet Union, it's dotted with castles, churches and hilltop fortresses. The capital, Tallinn, is known for its preserved Old Town, museums and the 314m-high Tallinn TV Tower, which has an observation deck.</p>
+                <button onclick="TranslateEST()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Estonia" target="_blank">Get to know more about Estonia</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="finland-content" role="tabpanel" aria-labelledby="finland-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Finland.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Finland.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Finland</h2>
                 <br>
                 <h3 id="cnt-fin">Today's population: </h3>
                 <br>
-                <p>Finland is a Northern European nation bordering Sweden, Norway and Russia. Its capital, Helsinki, occupies a peninsula and surrounding islands in the Baltic Sea. Helsinki is home to the 18th-century sea fortress Suomenlinna, the fashionable Design District and diverse museums. The Northern Lights can be seen from the country's Arctic Lapland province, a vast wilderness with national parks and ski resorts.</p>
+                <p id="finlandText">Finland is a Northern European nation bordering Sweden, Norway and Russia. Its capital, Helsinki, occupies a peninsula and surrounding islands in the Baltic Sea. Helsinki is home to the 18th-century sea fortress Suomenlinna, the fashionable Design District and diverse museums. The Northern Lights can be seen from the country's Arctic Lapland province, a vast wilderness with national parks and ski resorts.</p>
+                <button onclick="TranslateFIN()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Finland" target="_blank">Get to know more about Finland</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="france-content" role="tabpanel" aria-labelledby="france-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_France.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_France.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>France</h2>
                 <br>
                 <h3 id="cnt-fra">Today's population: </h3>
                 <br>
-                <p>France, in Western Europe, encompasses medieval cities, alpine villages and Mediterranean beaches. Paris, its capital, is famed for its fashion houses, classical art museums including the Louvre and monuments like the Eiffel Tower. The country is also renowned for its wines and sophisticated cuisine. Lascaux’s ancient cave drawings, Lyon’s Roman theater and the vast Palace of Versailles attest to its rich history.</p>
+                <p id="franceText">France, in Western Europe, encompasses medieval cities, alpine villages and Mediterranean beaches. Paris, its capital, is famed for its fashion houses, classical art museums including the Louvre and monuments like the Eiffel Tower. The country is also renowned for its wines and sophisticated cuisine. Lascaux’s ancient cave drawings, Lyon’s Roman theater and the vast Palace of Versailles attest to its rich history.</p>
+                <button onclick="TranslateFRA()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/France" target="_blank">Get to know more about France</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="georgia-content" role="tabpanel" aria-labelledby="georgia-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Georgia.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Georgia.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Georgia</h2>
                 <br>
                 <h3 id="cnt-geo">Today's population: </h3>
                 <br>
-                <p>Georgia, a country at the intersection of Europe and Asia, is a former Soviet republic that’s home to Caucasus Mountain villages and Black Sea beaches. It’s famous for Vardzia, a sprawling cave monastery dating to the 12th century, and the ancient wine-growing region Kakheti. The capital, Tbilisi, is known for the diverse architecture and mazelike, cobblestone streets of its old town.</p>
+                <p id="georgiaText">Georgia, a country at the intersection of Europe and Asia, is a former Soviet republic that’s home to Caucasus Mountain villages and Black Sea beaches. It’s famous for Vardzia, a sprawling cave monastery dating to the 12th century, and the ancient wine-growing region Kakheti. The capital, Tbilisi, is known for the diverse architecture and mazelike, cobblestone streets of its old town.</p>
+                <button onclick="TranslateGEO()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Georgia_(country)" target="_blank">Get to know more about Georgia</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="germany-content" role="tabpanel" aria-labelledby="germany-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Germany.svg" class="flag" style="object-position: 100% 50%; object-fit: fill;">
+                <img src="imgs/Flag_of_Germany.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Germany</h2>
                 <br>
                 <h3 id="cnt-deu">Today's population: </h3>
                 <br>
-                <p>Germany is a Western European country with a landscape of forests, rivers, mountain ranges and North Sea beaches. It has over 2 millennia of history. Berlin, its capital, is home to art and nightlife scenes, the Brandenburg Gate and many sites relating to WWII. Munich is known for its Oktoberfest and beer halls, including the 16th-century Hofbräuhaus. Frankfurt, with its skyscrapers, houses the European Central Bank.</p>
+                <p id="germanyText">Germany is a Western European country with a landscape of forests, rivers, mountain ranges and North Sea beaches. It has over 2 millennia of history. Berlin, its capital, is home to art and nightlife scenes, the Brandenburg Gate and many sites relating to WWII. Munich is known for its Oktoberfest and beer halls, including the 16th-century Hofbräuhaus. Frankfurt, with its skyscrapers, houses the European Central Bank.</p>
+                <button onclick="TranslateDEU()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Germany" target="_blank">Get to know more about Germany</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="greece-content" role="tabpanel" aria-labelledby="greece-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Greece.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Greece.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Greece</h2>
                 <br>
                 <h3 id="cnt-grc">Today's population: </h3>
                 <br>
-                <p>Greece is a country in southeastern Europe with thousands of islands throughout the Aegean and Ionian seas. Influential in ancient times, it's often called the cradle of Western civilization. Athens, its capital, retains landmarks including the 5th-century B.C. Acropolis citadel with the Parthenon temple. Greece is also known for its beaches, from the black sands of Santorini to the party resorts of Mykonos.</p>
+                <p id="greeceText">Greece is a country in southeastern Europe with thousands of islands throughout the Aegean and Ionian seas. Influential in ancient times, it's often called the cradle of Western civilization. Athens, its capital, retains landmarks including the 5th-century B.C. Acropolis citadel with the Parthenon temple. Greece is also known for its beaches, from the black sands of Santorini to the party resorts of Mykonos.</p>
+                <button onclick="TranslateGRC()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Greece" target="_blank">Get to know more about Greece</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="hungary-content" role="tabpanel" aria-labelledby="hungary-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Hungary.svg" class="flag" style="object-position: 100% 50%; object-fit: fill;">
+                <img src="imgs/Flag_of_Hungary.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Hungary</h2>
                 <br>
                 <h3 id="cnt-hun">Today's population: </h3>
                 <br>
-                <p>Hungary is a landlocked country in Central Europe. Its capital, Budapest, is bisected by the Danube River. Its cityscape is studded with architectural landmarks from Buda’s medieval Castle Hill and grand neoclassical buildings along Pest’s Andrássy Avenue to the 19th-century Chain Bridge. Turkish and Roman influence on Hungarian culture includes the popularity of mineral spas, including at thermal Lake Hévíz.</p>
+                <p id="hungaryText">Hungary is a landlocked country in Central Europe. Its capital, Budapest, is bisected by the Danube River. Its cityscape is studded with architectural landmarks from Buda’s medieval Castle Hill and grand neoclassical buildings along Pest’s Andrássy Avenue to the 19th-century Chain Bridge. Turkish and Roman influence on Hungarian culture includes the popularity of mineral spas, including at thermal Lake Hévíz.</p>
+                <button onclick="TranslateHUN()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Hungary" target="_blank">Get to know more about Hungary</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="iceland-content" role="tabpanel" aria-labelledby="iceland-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Iceland.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Iceland.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Iceland</h2>
                 <br>
                 <h3 id="cnt-isl">Today's population: </h3>
                 <br>
-                <p>Iceland, a Nordic island nation, is defined by its dramatic landscape with volcanoes, geysers, hot springs and lava fields. Massive glaciers are protected in Vatnajökull and Snæfellsjökull national parks. Most of the population lives in the capital, Reykjavik, which runs on geothermal power and is home to the National and Saga museums, tracing Iceland’s Viking history.</p>
+                <h5 class="clockbox">Hour: </h5>
+                <br>
+                <p id="icelandText">Iceland, a Nordic island nation, is defined by its dramatic landscape with volcanoes, geysers, hot springs and lava fields. Massive glaciers are protected in Vatnajökull and Snæfellsjökull national parks. Most of the population lives in the capital, Reykjavik, which runs on geothermal power and is home to the National and Saga museums, tracing Iceland’s Viking history.</p>
+                <button onclick="TranslateISL()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Iceland" target="_blank">Get to know more about Iceland</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="ireland-content" role="tabpanel" aria-labelledby="ireland-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Ireland.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Ireland.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Ireland</h2>
                 <br>
                 <h3 id="cnt-irl">Today's population: </h3>
                 <br>
-                <p>The Republic of Ireland occupies most of the island of Ireland, off the coast of England and Wales. Its capital, Dublin, is the birthplace of writers like Oscar Wilde, and home of Guinness beer. The 9th-century Book of Kells and other illustrated manuscripts are on show in Dublin’s Trinity College Library. Dubbed the "Emerald Isle” for its lush landscape, the country is dotted with castles like medieval Cahir Castle.</p>
+                <p id="irelandText">The Republic of Ireland occupies most of the island of Ireland, off the coast of England and Wales. Its capital, Dublin, is the birthplace of writers like Oscar Wilde, and home of Guinness beer. The 9th-century Book of Kells and other illustrated manuscripts are on show in Dublin’s Trinity College Library. Dubbed the "Emerald Isle” for its lush landscape, the country is dotted with castles like medieval Cahir Castle.</p>
+                <button onclick="TranslateIRL()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Republic_of_Ireland" target="_blank">Get to know more about Ireland</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="italy-content" role="tabpanel" aria-labelledby="italy-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Italy.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Italy.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Italy</h2>
                 <br>
                 <h3 id="cnt-ita">Today's population: </h3>
                 <br>
-                <p>Italy, a European country with a long Mediterranean coastline, has left a powerful mark on Western culture and cuisine. Its capital, Rome, is home to the Vatican as well as landmark art and ancient ruins. Other major cities include Florence, with Renaissance masterpieces such as Michelangelo’s "David" and Brunelleschi's Duomo; Venice, the city of canals; and Milan, Italy’s fashion capital.</p>
+                <p id="italyText">Italy, a European country with a long Mediterranean coastline, has left a powerful mark on Western culture and cuisine. Its capital, Rome, is home to the Vatican as well as landmark art and ancient ruins. Other major cities include Florence, with Renaissance masterpieces such as Michelangelo’s "David" and Brunelleschi's Duomo; Venice, the city of canals; and Milan, Italy’s fashion capital.</p>
+                <button onclick="TranslateITA()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Italy" target="_blank">Get to know more about Italy</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="kazakhstan-content" role="tabpanel" aria-labelledby="kazakhstan-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Kazakhstan.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Kazakhstan.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Kazakhstan</h2>
                 <br>
                 <h3 id="cnt-kaz">Today's population: </h3>
                 <br>
-                <p>Kazakhstan, a Central Asian country and former Soviet republic, extends from the Caspian Sea in the west to the Altai Mountains at its eastern border with China and Russia. Its largest metropolis, Almaty, is a long-standing trading hub whose landmarks include Ascension Cathedral, a tsarist-era Russian Orthodox church, and the Central State Museum of Kazakhstan, displaying thousands of Kazakh artifacts.</p>
+                <p id="kazakhstanText">Kazakhstan, a Central Asian country and former Soviet republic, extends from the Caspian Sea in the west to the Altai Mountains at its eastern border with China and Russia. Its largest metropolis, Almaty, is a long-standing trading hub whose landmarks include Ascension Cathedral, a tsarist-era Russian Orthodox church, and the Central State Museum of Kazakhstan, displaying thousands of Kazakh artifacts.</p>
+                <button onclick="TranslateKAZ()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Kazakhstan" target="_blank">Get to know more about Kazakhstan</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="latvia-content" role="tabpanel" aria-labelledby="latvia-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Latvia.svg" class="flag" style="object-position: 100% 50%; object-fit: fill;">
+                <img src="imgs/Flag_of_Latvia.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Latvia</h2>
                 <br>
                 <h3 id="cnt-lva">Today's population: </h3>
                 <br>
-                <p>Latvia is a country on the Baltic Sea between Lithuania and Estonia. Its landscape is marked by wide beaches as well as dense, sprawling forests. Latvia’s capital is Riga, home to notable wooden and art nouveau architecture, a vast Central Market and a medieval Old Town with St. Peter's Church. Riga's museums include the Latvian Ethnographic Open-Air Museum, showcasing local crafts, food and music.</p>
+                <p id="latviaText">Latvia is a country on the Baltic Sea between Lithuania and Estonia. Its landscape is marked by wide beaches as well as dense, sprawling forests. Latvia’s capital is Riga, home to notable wooden and art nouveau architecture, a vast Central Market and a medieval Old Town with St. Peter's Church. Riga's museums include the Latvian Ethnographic Open-Air Museum, showcasing local crafts, food and music.</p>
+                <button onclick="TranslateLVA()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Latvia" target="_blank">Get to know more about Latvia</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="lithuania-content" role="tabpanel" aria-labelledby="lithuania-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Lithuania.svg" class="flag" style="object-position: 100% 50%; object-fit: fill;">
+                <img src="imgs/Flag_of_Lithuania.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Lithuania</h2>
                 <br>
                 <h3 id="cnt-ltu">Today's population: </h3>
                 <br>
-                <p>Lithuania is a country and the southernmost of Europe’s Baltic states, a former Soviet bloc nation bordering Poland, Latvia and Belarus. Its capital, Vilnius, near Belarus' border, is known for its medieval Old Town. It also has Gothic, Renaissance and baroque architecture, and 18th-century cathedral built on a pagan temple site. Hilltop Gediminas' Tower, a symbol of the city and the nation, offers sweeping views.</p>
+                <p id="lithuaniaText">Lithuania is a country and the southernmost of Europe’s Baltic states, a former Soviet bloc nation bordering Poland, Latvia and Belarus. Its capital, Vilnius, near Belarus' border, is known for its medieval Old Town. It also has Gothic, Renaissance and baroque architecture, and 18th-century cathedral built on a pagan temple site. Hilltop Gediminas' Tower, a symbol of the city and the nation, offers sweeping views.</p>
+                <button onclick="TranslateLTU()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Lithuania" target="_blank">Get to know more about Lithuania</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="luxembourg-content" role="tabpanel" aria-labelledby="luxembourg-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Luxembourg.svg" class="flag" style="object-position: 100% 50%; object-fit: fill;">
+                <img src="imgs/Flag_of_Luxembourg.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Luxembourg</h2>
                 <br>
                 <h3 id="cnt-lux">Today's population: </h3>
                 <br>
-                <p>Luxembourg is a small European country, surrounded by Belgium, France and Germany. It’s mostly rural, with dense Ardennes forest and nature parks in the north, rocky gorges of the Mullerthal region in the east and the Moselle river valley in the southeast. Its capital, Luxembourg City, is famed for its fortified medieval old town perched on sheer cliffs.</p>
+                <p id="luxembourgText">Luxembourg is a small European country, surrounded by Belgium, France and Germany. It’s mostly rural, with dense Ardennes forest and nature parks in the north, rocky gorges of the Mullerthal region in the east and the Moselle river valley in the southeast. Its capital, Luxembourg City, is famed for its fortified medieval old town perched on sheer cliffs.</p>
+                <button onclick="TranslateLUX()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Luxembourg" target="_blank">Get to know more about Luxembourg</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="malta-content" role="tabpanel" aria-labelledby="malta-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Malta.svg" class="flag" style="object-position: 100% 0%; object-fit: cover;">
+                <img src="imgs/Flag_of_Malta.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Malta</h2>
                 <br>
                 <h3 id="cnt-mlt">Today's population: </h3>
                 <br>
-                <p>Malta is an archipelago in the central Mediterranean between Sicily and the North African coast. It's a nation known for historic sites related to a succession of rulers including the Romans, Moors, Knights of Saint John, French and British. It has numerous fortresses, megalithic temples and the Ħal Saflieni Hypogeum, a subterranean complex of halls and burial chambers dating to circa 4000 B.C.</p>
+                <p id="maltaText">Malta is an archipelago in the central Mediterranean between Sicily and the North African coast. It's a nation known for historic sites related to a succession of rulers including the Romans, Moors, Knights of Saint John, French and British. It has numerous fortresses, megalithic temples and the Ħal Saflieni Hypogeum, a subterranean complex of halls and burial chambers dating to circa 4000 B.C.</p>
+                <button onclick="TranslateMLT()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Malta" target="_blank">Get to know more about Malta</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="moldova-content" role="tabpanel" aria-labelledby="moldova-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Moldova.svg" class="flag" style="object-position: 100% 40%; object-fit: cover;">
+                <img src="imgs/Flag_of_Moldova.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Moldova</h2>
                 <br>
                 <h3 id="cnt-mda">Today's population: </h3>
                 <br>
-                <p>Moldova, an Eastern European country and former Soviet republic, has varied terrain including forests, rocky hills and vineyards. Its wine regions include Nistreana, known for reds, and Codru, home to some of the world’s largest cellars. Capital Chișinău has Soviet-style architecture and the National Museum of History, exhibiting art and ethnographic collections that reflect cultural links with neighboring Romania.</p>
+                <p id="moldovaText">Moldova, an Eastern European country and former Soviet republic, has varied terrain including forests, rocky hills and vineyards. Its wine regions include Nistreana, known for reds, and Codru, home to some of the world’s largest cellars. Capital Chișinău has Soviet-style architecture and the National Museum of History, exhibiting art and ethnographic collections that reflect cultural links with neighboring Romania.</p>
+                <button onclick="TranslateMDA()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Moldova" target="_blank">Get to know more about Moldova</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="montenegro-content" role="tabpanel" aria-labelledby="montenegro-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Montenegro.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Montenegro.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Montenegro</h2>
                 <br>
                 <h3 id="cnt-mne">Today's population: </h3>
                 <br>
-                <p>Montenegro is a Balkan country with rugged mountains, medieval villages and a narrow strip of beaches along its Adriatic coastline. The Bay of Kotor, resembling a fjord, is dotted with coastal churches and fortified towns such as Kotor and Herceg Novi. Durmitor National Park, home to bears and wolves, encompasses limestone peaks, glacial lakes and 1,300m-deep Tara River Canyon.</p>
+                <p id="montenegroText">Montenegro is a Balkan country with rugged mountains, medieval villages and a narrow strip of beaches along its Adriatic coastline. The Bay of Kotor, resembling a fjord, is dotted with coastal churches and fortified towns such as Kotor and Herceg Novi. Durmitor National Park, home to bears and wolves, encompasses limestone peaks, glacial lakes and 1,300m-deep Tara River Canyon.</p>
+                <button onclick="TranslateMNE()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Montenegro" target="_blank">Get to know more about Montenegro</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="netherlands-content" role="tabpanel" aria-labelledby="netherlands-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_the_Netherlands.svg" class="flag" style="object-position: 100% 50%; object-fit: fill;">
+                <img src="imgs/Flag_of_the_Netherlands.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Netherlands</h2>
                 <br>
                 <h3 id="cnt-nld">Today's population: </h3>
                 <br>
-                <p>The Netherlands, a country in northwestern Europe, is known for a flat landscape of canals, tulip fields, windmills and cycling routes. Amsterdam, the capital, is home to the Rijksmuseum, Van Gogh Museum and the house where Jewish diarist Anne Frank hid during WWII. Canalside mansions and a trove of works from artists including Rembrandt and Vermeer remain from the city's 17th-century "Golden Age."</p>
+                <p id="netherlandsText">The Netherlands, a country in northwestern Europe, is known for a flat landscape of canals, tulip fields, windmills and cycling routes. Amsterdam, the capital, is home to the Rijksmuseum, Van Gogh Museum and the house where Jewish diarist Anne Frank hid during WWII. Canalside mansions and a trove of works from artists including Rembrandt and Vermeer remain from the city's 17th-century "Golden Age."</p>
+                <button onclick="TranslateNLD()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Netherlands" target="_blank">Get to know more about the Netherlands</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="norway-content" role="tabpanel" aria-labelledby="norway-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Norway.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Norway.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Norway</h2>
                 <br>
                 <h3 id="cnt-nor">Today's population: </h3>
                 <br>
-                <p>Norway is a Scandinavian country encompassing mountains, glaciers and deep coastal fjords. Oslo, the capital, is a city of green spaces and museums. Preserved 9th-century Viking ships are displayed at Oslo’s Viking Ship Museum. Bergen, with colorful wooden houses, is the starting point for cruises to the dramatic Sognefjord. Norway is also known for fishing, hiking and skiing, notably at Lillehammer’s Olympic resort.</p>
+                <p id="norwayText">Norway is a Scandinavian country encompassing mountains, glaciers and deep coastal fjords. Oslo, the capital, is a city of green spaces and museums. Preserved 9th-century Viking ships are displayed at Oslo’s Viking Ship Museum. Bergen, with colorful wooden houses, is the starting point for cruises to the dramatic Sognefjord. Norway is also known for fishing, hiking and skiing, notably at Lillehammer’s Olympic resort.</p>
+                <button onclick="TranslateNOR()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Norway" target="_blank">Get to know more about Norway</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="poland-content" role="tabpanel" aria-labelledby="poland-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Poland.svg" class="flag" style="object-position: 100% 50%; object-fit: fill;">
+                <img src="imgs/Flag_of_Poland.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Poland</h2>
                 <br>
                 <h3 id="cnt-pol">Today's population: </h3>
                 <br>
-                <p>Poland, officially the Republic of Poland, is a country located in Central Europe. It is divided into 16 administrative subdivisions, covering an area of 312,696 square kilometres, and has a largely temperate seasonal climate.</p>
+                <p id="polandText">Poland, officially the Republic of Poland, is a country located in Central Europe. It is divided into 16 administrative subdivisions, covering an area of 312,696 square kilometres, and has a largely temperate seasonal climate.</p>
+                <button onclick="TranslatePOL()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Poland" target="_blank">Get to know more about Poland</a>
               </div>
             </div>
             <div class="tab-pane fade card show active card card-body" id="portugal-content" role="tabpanel" aria-labelledby="portugal-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Portugal.svg" class="flag" style="object-position: 100% 40%; object-fit: cover;">
+                <img src="imgs/Flag_of_Portugal.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Portugal</h2>
                 <br>
                 <h3 id="cnt-prt">Today's population: </h3>
                 <br>
-                <p>Portugal is a southern European country on the Iberian Peninsula, bordering Spain. Its location on the Atlantic Ocean has influenced many aspects of its culture: salt cod and grilled sardines are national dishes, the Algarve's beaches are a major destination and much of the nation’s architecture dates to the 1500s–1800s, when Portugal had a powerful maritime empire.</p>
+                <p id="portugalText">Portugal is a southern European country on the Iberian Peninsula, bordering Spain. Its location on the Atlantic Ocean has influenced many aspects of its culture: salt cod and grilled sardines are national dishes, the Algarve's beaches are a major destination and much of the nation’s architecture dates to the 1500s–1800s, when Portugal had a powerful maritime empire.</p>
+                <button onclick="TranslatePRT()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Portugal" target="_blank">Get to know more about Portugal</a>
+                <br>
+                <br>
+                <p id="clockbox">Hour: </p>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="romania-content" role="tabpanel" aria-labelledby="romania-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Romania.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Romania.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Romania</h2>
                 <br>
                 <h3 id="cnt-rou">Today's population: </h3>
                 <br>
-                <p>Romania is a southeastern European country known for the forested region of Transylvania, ringed by the Carpathian Mountains. Its preserved medieval towns include Sighişoara, and there are many fortified churches and castles, notably clifftop Bran Castle, long associated with the Dracula legend. Bucharest, the country’s capital, is the site of the gigantic, Communist-era Palatul Parlamentului government building.</p>
+                <p id="romaniaText">Romania is a southeastern European country known for the forested region of Transylvania, ringed by the Carpathian Mountains. Its preserved medieval towns include Sighişoara, and there are many fortified churches and castles, notably clifftop Bran Castle, long associated with the Dracula legend. Bucharest, the country’s capital, is the site of the gigantic, Communist-era Palatul Parlamentului government building.</p>
+                <button onclick="TranslateROU()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Romania" target="_blank">Get to know more about Romania</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="russia-content" role="tabpanel" aria-labelledby="russia-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Russia.svg" class="flag" style="object-position: 100% 50%; object-fit: fill;">
+                <img src="imgs/Flag_of_Russia.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Russia</h2>
                 <br>
                 <h3 id="cnt-rus">Today's population: </h3>
                 <br>
-                <p>Russia, the world’s largest nation, borders European and Asian countries as well as the Pacific and Arctic oceans. Its landscape ranges from tundra and forests to subtropical beaches. It’s famous for Moscow's Bolshoi and St. Petersburg's Mariinsky ballet companies. St. Petersburg, founded by Russian leader Peter the Great, has the baroque Winter Palace, now housing part of the State Hermitage Museum’s art collection.</p>
+                <p id="russiaText">Russia, the world’s largest nation, borders European and Asian countries as well as the Pacific and Arctic oceans. Its landscape ranges from tundra and forests to subtropical beaches. It’s famous for Moscow's Bolshoi and St. Petersburg's Mariinsky ballet companies. St. Petersburg, founded by Russian leader Peter the Great, has the baroque Winter Palace, now housing part of the State Hermitage Museum’s art collection.</p>
+                <button onclick="TranslateRUS()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Russia" target="_blank">Get to know more about Russia</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="serbia-content" role="tabpanel" aria-labelledby="serbia-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Serbia.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Serbia.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Serbia</h2>
                 <br>
                 <h3 id="cnt-srb">Today's population: </h3>
                 <br>
-                <p>Serbia is a country on southeast Europe's Balkan peninsula with northern plateaus and mountains with ski resorts to the south. Capital city Belgrade is home to Communist-era architecture and Kalemegdan Park, site of Belgrade Fortress, held successively by the Roman, Byzantine and Ottoman empires. Stari Grad, the old city, is home to 19th-century mansions, plus opera and ballet at Narodno Pozorište (national theater).</p>
+                <p id="serbiaText">Serbia is a country on southeast Europe's Balkan peninsula with northern plateaus and mountains with ski resorts to the south. Capital city Belgrade is home to Communist-era architecture and Kalemegdan Park, site of Belgrade Fortress, held successively by the Roman, Byzantine and Ottoman empires. Stari Grad, the old city, is home to 19th-century mansions, plus opera and ballet at Narodno Pozorište (national theater).</p>
+                <button onclick="TranslateSRB()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Serbia" target="_blank">Get to know more about Serbia</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="slovakia-content" role="tabpanel" aria-labelledby="slovakia-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Slovakia.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Slovakia.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Slovakia</h2>
                 <br>
                 <h3 id="cnt-svk">Today's population: </h3>
                 <br>
-                <p>Slovakia is a central European country known for its dramatic natural landscape and many castles. Near the Austrian border, capital city Bratislava features a pedestrian-only Old Town with a lively cafe scene. Rising on a hill above the Danube River, Bratislava Castle houses a branch of the Slovak National Museum, with displays ranging from Roman artifacts to 20th-century arts and crafts.</p>
+                <p id="slovakiaText">Slovakia is a central European country known for its dramatic natural landscape and many castles. Near the Austrian border, capital city Bratislava features a pedestrian-only Old Town with a lively cafe scene. Rising on a hill above the Danube River, Bratislava Castle houses a branch of the Slovak National Museum, with displays ranging from Roman artifacts to 20th-century arts and crafts.</p>
+                <button onclick="TranslateSVK()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Slovakia" target="_blank">Get to know more about Slovakia</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="slovenia-content" role="tabpanel" aria-labelledby="slovenia-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Slovenia.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Slovenia.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Slovenia</h2>
                 <br>
                 <h3 id="cnt-svn">Today's population: </h3>
                 <br>
-                <p>Slovenia, a country in Central Europe, is known for its mountains, ski resorts and lakes. On Lake Bled, a glacial lake fed by hot springs, the town of Bled contains a church-topped islet and a cliffside medieval castle. In Ljubljana, Slovenia’s capital, baroque facades mix with the 20th-century architecture of native Jože Plečnik, whose iconic Tromostovje (Triple Bridge) spans the tightly curving Ljubljanica River.</p>
+                <p id="sloveniaText">Slovenia, a country in Central Europe, is known for its mountains, ski resorts and lakes. On Lake Bled, a glacial lake fed by hot springs, the town of Bled contains a church-topped islet and a cliffside medieval castle. In Ljubljana, Slovenia’s capital, baroque facades mix with the 20th-century architecture of native Jože Plečnik, whose iconic Tromostovje (Triple Bridge) spans the tightly curving Ljubljanica River.</p>
+                <button onclick="TranslateSVN()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Slovenia" target="_blank">Get to know more about Slovenia</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="spain-content" role="tabpanel" aria-labelledby="spain-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Spain.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Spain.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Spain</h2>
                 <br>
                 <h3 id="cnt-esp">Today's population: </h3>
                 <br>
-                <p>Spain, a country on Europe’s Iberian Peninsula, includes 17 autonomous regions with diverse geography and cultures. Capital city Madrid is home to the Royal Palace and Prado museum, housing works by European masters. Segovia has a medieval castle (the Alcázar) and an intact Roman aqueduct. Catalonia’s capital, Barcelona, is defined by Antoni Gaudí’s whimsical modernist landmarks like the Sagrada Família church.</p>
+                <p id="spainText">Spain, a country on Europe’s Iberian Peninsula, includes 17 autonomous regions with diverse geography and cultures. Capital city Madrid is home to the Royal Palace and Prado museum, housing works by European masters. Segovia has a medieval castle (the Alcázar) and an intact Roman aqueduct. Catalonia’s capital, Barcelona, is defined by Antoni Gaudí’s whimsical modernist landmarks like the Sagrada Família church.</p>
+                <button onclick="TranslateESP()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Spain" target="_blank">Get to know more about Spain</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="sweden-content" role="tabpanel" aria-labelledby="sweden-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Sweden.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Sweden.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Sweden</h2>
                 <br>
                 <h3 id="cnt-swe">Today's population: </h3>
                 <br>
-                <p>Sweden is a Scandinavian nation with thousands of coastal islands and inland lakes, along with vast boreal forests and glaciated mountains. Its principal cities, eastern capital Stockholm and southwestern Gothenburg and Malmö, are all coastal. Stockholm is built on 14 islands. It has more than 50 bridges, as well as the medieval old town, Gamla Stan, royal palaces and museums such as open-air Skansen.</p>
+                <p id="swedenText">Sweden is a Scandinavian nation with thousands of coastal islands and inland lakes, along with vast boreal forests and glaciated mountains. Its principal cities, eastern capital Stockholm and southwestern Gothenburg and Malmö, are all coastal. Stockholm is built on 14 islands. It has more than 50 bridges, as well as the medieval old town, Gamla Stan, royal palaces and museums such as open-air Skansen.</p>
+                <button onclick="TranslateSWE()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Sweden" target="_blank">Get to know more about Sweden</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="switzerland-content" role="tabpanel" aria-labelledby="switzerland-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Switzerland_(Pantone).svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Switzerland_(Pantone).png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Switzerland</h2>
                 <br>
                 <h3 id="cnt-che">Today's population: </h3>
                 <br>
-                <p>Switzerland is a mountainous Central European country, home to numerous lakes, villages and the high peaks of the Alps. Its cities contain medieval quarters, with landmarks like capital Bern’s Zytglogge clock tower and Lucerne’s wooden chapel bridge. The country is also known for its ski resorts and hiking trails. Banking and finance are key industries, and Swiss watches and chocolate are world renowned.</p>
+                <p id="switzerlandText">Switzerland is a mountainous Central European country, home to numerous lakes, villages and the high peaks of the Alps. Its cities contain medieval quarters, with landmarks like capital Bern’s Zytglogge clock tower and Lucerne’s wooden chapel bridge. The country is also known for its ski resorts and hiking trails. Banking and finance are key industries, and Swiss watches and chocolate are world renowned.</p>
+                <button onclick="TranslateCHE()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Switzerland" target="_blank">Get to know more about Switzerland</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="turkey-content" role="tabpanel" aria-labelledby="turkey-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Turkey.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_Turkey.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Turkey</h2>
                 <br>
                 <h3 id="cnt-tur">Today's population: </h3>
                 <br>
-                <p>Turkey is a nation straddling eastern Europe and western Asia with cultural connections to ancient Greek, Persian, Roman, Byzantine and Ottoman empires. Cosmopolitan Istanbul, on the Bosphorus Strait, is home to the iconic Hagia Sophia, with its soaring dome and Christian mosaics, the massive 17th-century Blue Mosque and the circa-1460 Topkapı Palace, former home of sultans. Ankara is Turkey’s modern capital.</p>
+                <p id="turkeyText">Turkey is a nation straddling eastern Europe and western Asia with cultural connections to ancient Greek, Persian, Roman, Byzantine and Ottoman empires. Cosmopolitan Istanbul, on the Bosphorus Strait, is home to the iconic Hagia Sophia, with its soaring dome and Christian mosaics, the massive 17th-century Blue Mosque and the circa-1460 Topkapı Palace, former home of sultans. Ankara is Turkey’s modern capital.</p>
+                <button onclick="TranslateTUR()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Turkey" target="_blank">Get to know more about Turkey</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="ukraine-content" role="tabpanel" aria-labelledby="ukraine-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_Ukraine.svg" class="flag" style="object-position: 100% 50%; object-fit: fill;">
+                <img src="imgs/Flag_of_Ukraine.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>Ukraine</h2>
                 <br>
                 <h3 id="cnt-ukr">Today's population: </h3>
                 <br>
-                <p>Ukraine is a large country in Eastern Europe known for its Orthodox churches, Black Sea coastline and forested mountains. Its capital, Kiev, features the gold-domed St. Sophia's Cathedral, with 11th-century mosaics and frescoes. Overlooking the Dnieper River is the Kiev Pechersk Lavra monastery complex, a Christian pilgrimage site housing Scythian tomb relics and catacombs containing mummified Orthodox monks.</p>
+                <p id="ukraineText">Ukraine is a large country in Eastern Europe known for its Orthodox churches, Black Sea coastline and forested mountains. Its capital, Kiev, features the gold-domed St. Sophia's Cathedral, with 11th-century mosaics and frescoes. Overlooking the Dnieper River is the Kiev Pechersk Lavra monastery complex, a Christian pilgrimage site housing Scythian tomb relics and catacombs containing mummified Orthodox monks.</p>
+                <button onclick="TranslateUKR()">Translate</button>
                 <a href="https://en.wikipedia.org/wiki/Ukraine" target="_blank">Get to know more about Ukraine</a>
               </div>
             </div>
             <div class="tab-pane fade card card-body" id="uk-content" role="tabpanel" aria-labelledby="uk-list">
               <div class="flag-container">
-                <img src="imgs/Flag_of_the_United_Kingdom.svg" class="flag" style="object-position: 100% 50%; object-fit: cover;">
+                <img src="imgs/Flag_of_the_United_Kingdom.png" class="flag">
               </div>
               <div class="text-container">
                 <h2>United Kingdom</h2>
                 <br>
                 <h3 id="cnt-gbr">Today's population: </h3>
+                <br>
+                <h5 class="clockbox">Hour: </h5>
                 <br>
                 <p>The United Kingdom, made up of England, Scotland, Wales and Northern Ireland, is an island nation in northwestern Europe. England – birthplace of Shakespeare and The Beatles – is home to the capital, London, a globally influential centre of finance and culture. England is also site of Neolithic Stonehenge, Bath’s Roman spa and centuries-old universities at Oxford and Cambridge.</p>
                 <a href="https://en.wikipedia.org/wiki/United_Kingdom" target="_blank">Get to know more about the United Kingdom</a>
@@ -699,12 +759,13 @@
         </div>
       </div>
     </div>
+ 
 
     <div>
       <h1 id="statistics">Statistics</h1>
       <br>
       <div>           
-        <input class="form-control search" id="myInput" onkeyup="myFunction()" type="text" placeholder="Search...">
+        <input class="form-control search" id="myInput" type="text" placeholder="Search...">
         <table class="table table-striped">
             <thead>
                 <th scope="col">#</th>
@@ -1073,13 +1134,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
  
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!--Our JS-->
     <script src="script.js"></script>
 
-    <script src="searchtablebar.js"></script>
-
+    <!--
+    <script src="https://translate.yandex.net/api/v1.5/tr.json/getLangs?ui=en&key=trnsl.1.1.20190123T141845Z.d169317d564a30b5.ac6df98071d1672831e74046ce69de9bdc841937 HTTP/1.1" type="text/javascript"></script>
+      <script src="https://translate.yandex.net/api/v1.5/tr/translate?lang=en-ru&key=trnsl.1.1.20190123T141845Z.d169317d564a30b5.ac6df98071d1672831e74046ce69de9bdc841937 HTTP/1.1"></script>
+  --> 
 </body>
 </html>

@@ -25,12 +25,24 @@ nav{
 nav ul{
     float: right;
     margin: 0;
-    padding: 20px 200px;
+    padding: 20px;
     display: flex;
+    justify-content: center;
 }
 
 nav ul li{
     list-style: none; 
+}
+
+#div{
+    margin: auto 0;
+    text-align: center;
+}
+
+ul#example{
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 nav ul li a{
@@ -133,7 +145,7 @@ hr{
 }
 
 table{
-    margin: 5% 0 0 0;
+    margin: 2% 0 0 0;
 }
 
 th{

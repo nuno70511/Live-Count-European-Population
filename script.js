@@ -509,14 +509,15 @@ $(window).on('scroll', function(){
         $('nav').removeClass('black');
     }
 })
-
+/*
 //Synchronise hover selection with navbar items
 $('#example a').click(function(e) {
     $('#example a').removeClass('active');
     $(this).addClass('active');
 });
+*/
 
-//Synchronise hover selection with list-group items for Albanis 
+//Synchronise hover selection with list-group items for each country
 function myFunction(e) {
     var elems = document.querySelectorAll(".active");
     [].forEach.call(elems, function(el) {
